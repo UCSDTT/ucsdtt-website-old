@@ -23,7 +23,7 @@
 
 				$.ajax({
 					type: 'POST',
-					url: 'assets/php/contact.php',
+					url: '/contact',
 					dataType: 'json',
 					data: {
 						name: name,
@@ -36,8 +36,10 @@
 						submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
 					},
 					success: function(result) {
-						if(result.sendstatus == 1) {
-							ajaxResponse.html(result.message);
+            result = JSON.parse(result);
+            
+            if(result.sendstatus == 1) {
+              ajaxResponse.html(result.message);
 							$form.fadeOut(500);
 						} else {
 							ajaxResponse.html(result.message);
