@@ -1,0 +1,926 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Theta Tau @ UCSD
+    // CSS
+    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/simpletextrotator.css', rel='stylesheet')
+    link(href='css/font-awesome.min.css', rel='stylesheet')
+    link(href='css/et-line-font.css', rel='stylesheet')
+    link(href='css/magnific-popup.css', rel='stylesheet')
+    link(href='css/flexslider.css', rel='stylesheet')
+    link(href='css/owl.carousel.css', rel='stylesheet')
+    link(href='css/animate.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+  body
+    // Preloader
+    .page-loader
+      .loader Loading...
+    // Navigation start
+    nav.navbar.navbar-custom.navbar-transparent.navbar-fixed-top.one-page(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#custom-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') Rival
+        #custom-collapse.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#totop') Home
+            li
+              a.section-scroll(href='#about') About
+            li
+              a.section-scroll(href='#features') Features
+            li
+              a.section-scroll(href='#works') Works
+            li
+              a.section-scroll(href='#team') Team
+            li
+              a.section-scroll(href='#pricing') Prices
+            li
+              a.section-scroll(href='#news') News
+            li
+              a.section-scroll(href='#contact') Contact
+    // Navigation end
+    // Home start
+    //
+      <section id="home" class="home-section home-parallax home-fade home-full-height bg-dark-30" data-background="images/section-2.jpg">
+      <div class="hs-caption">
+      <div class="caption-content">
+      <div class="hs-title-size-1 font-alt mb-30">
+      Hello & Welcome
+      </div>
+      <div class="hs-title-size-4 font-alt mb-40">
+      Theta Tau @ UCSD
+      </div>
+      <a href="#" class="btn btn-border-w btn-round">Learn More</a>
+      </div>
+      </div>
+      </section >
+    section#home.home-section.home-full-height.bg-dark-30(data-background='images/section-12.jpg')
+      // Youtube player start
+      .video-player(data-property="{videoURL:'https://www.youtube.com/watch?v=MFZRJDWFhuY', containment:'.home-section', startAt:0, mute:true, autoPlay:true, loop:true, opacity:0.85, showControls:false, showYTLogo:false, vol:25}")
+      // Youtube player end
+      // Youtube controls start
+      .video-controls-box
+        .container
+          .video-controls
+            a#video-volume.fa.fa-volume-up(href='#')  
+            a#video-play.fa.fa-pause(href='#')  
+      // Youtube controls end
+      .hs-caption
+        .caption-content
+          .hs-title-size-1.font-alt.mb-30
+            | Epsilon Delta
+          .hs-title-size-4.font-alt.mb-40
+            | Theta Tau @ UCSD
+          a.btn.btn-border-w.btn-round(href='#') Learn More
+    // Home end
+    // Wrapper start
+    .main
+      // About start
+      section#about.module
+        .container
+          .row
+            .col-sm-8.col-sm-offset-2
+              h2.module-title.font-alt Welcome to Rival
+              .module-subtitle.font-serif.large-text
+                | We’re an award winning London based digital agency, lovingly curating pixels for maximum impact. We don’t have a style — we have standards.
+          // .row
+          .row
+            .col-sm-2.col-sm-offset-5
+              .large-text.align-center
+                a.section-scroll(href='#features')
+                  i.fa.fa-angle-down
+        // .container
+      // About end
+      // Divider
+      hr.divider-w
+      // Divider
+      // Features start
+      section#features.module
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Our Services
+              .module-subtitle.font-serif
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+          // .row
+          .row.multi-columns-row
+            // Features start
+            .col-sm-6.col-md-3.col-lg-3
+              .features-item
+                .features-icon
+                  span.icon-lightbulb
+                h3.features-title.font-alt Ideas and concepts
+                | 							Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+            // Features end
+            // Features start
+            .col-sm-6.col-md-3.col-lg-3
+              .features-item
+                .features-icon
+                  span.icon-bike
+                h3.features-title.font-alt Optimised for speed
+                | 							Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+            // Features end
+            // Features start
+            .col-sm-6.col-md-3.col-lg-3
+              .features-item
+                .features-icon
+                  span.icon-tools
+                h3.features-title.font-alt Designs & interfaces
+                | 							Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+            // Features end
+            // Features start
+            .col-sm-6.col-md-3.col-lg-3
+              .features-item
+                .features-icon
+                  span.icon-gears
+                h3.features-title.font-alt Highly customizable
+                | 							Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+            // Features end
+            // Features start
+            .col-sm-6.col-md-3.col-lg-3
+              .features-item
+                .features-icon
+                  span.icon-tools-2
+                h3.features-title.font-alt Coding & development
+                | 							Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+            // Features end
+            // Features start
+            .col-sm-6.col-md-3.col-lg-3
+              .features-item
+                .features-icon
+                  span.icon-genius
+                h3.features-title.font-alt Features & plugins
+                | 							Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+            // Features end
+            // Features start
+            .col-sm-6.col-md-3.col-lg-3
+              .features-item
+                .features-icon
+                  span.icon-mobile
+                h3.features-title.font-alt Responsive design
+                | 							Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+            // Features end
+            // Features start
+            .col-sm-6.col-md-3.col-lg-3
+              .features-item
+                .features-icon
+                  span.icon-lifesaver
+                h3.features-title.font-alt Dedicated support
+                | 							Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.
+            // Features end
+          // .row
+        // .container
+      // Features end
+      // Video start
+      section.module.bg-dark-60(data-background='images/section-6.jpg')
+        .container
+          .row
+            .col-sm-12
+              .video-box
+                .video-box-icon
+                  a.video-pop-up(href='http://vimeo.com/15486292')
+                    span.icon-video
+                .video-title.font-alt
+                  | Presentation
+                .video-subtitle.font-alt
+                  | Watch the video about our new products
+          // .row
+      // Video end
+      // Portfolio start
+      section#works.module.pb-0
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Our Works
+          // .row
+          .row
+            .col-sm-12
+              ul#filters.filter.font-alt.hidden-xs
+                li
+                  a.current.wow.fadeInUp(href='#', data-filter='*') All
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.illustration', data-wow-delay='0.2s') Illustration
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.marketing', data-wow-delay='0.4s') Marketing
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.photography', data-wow-delay='0.6s') Photography
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.webdesign', data-wow-delay='0.8s') Web Design
+          // .row
+        // .container
+        // Portfolio list start
+        ul#works-grid.works-grid.works-grid-gut.works-grid-3.works-hover-w
+          // Portfolio item start
+          li.work-item.illustration.webdesign
+            a(href='portfolio-single-1.html')
+              .work-image
+                img(src='images/work-1.jpg', alt='')
+              .work-caption.font-alt
+                h3.work-title Corporate Identity
+                .work-descr
+                  | Illustration
+          // Portfolio item end
+          // Portfolio item start
+          li.work-item.marketing.photography
+            a(href='portfolio-single-1.html')
+              .work-image
+                img(src='images/work-2.jpg', alt='')
+              .work-caption.font-alt
+                h3.work-title Bag MockUp
+                .work-descr
+                  | Marketing
+          // Portfolio item end
+          // Portfolio item start
+          li.work-item.illustration.photography
+            a(href='portfolio-single-1.html')
+              .work-image
+                img(src='images/work-3.jpg', alt='')
+              .work-caption.font-alt
+                h3.work-title Disk Cover
+                .work-descr
+                  | Illustration
+          // Portfolio item end
+          // Portfolio item start
+          li.work-item.marketing.photography
+            a(href='portfolio-single-1.html')
+              .work-image
+                img(src='images/work-4.jpg', alt='')
+              .work-caption.font-alt
+                h3.work-title Business Card
+                .work-descr
+                  | Photography
+          // Portfolio item end
+          // Portfolio item start
+          li.work-item.illustration.webdesign
+            a(href='portfolio-single-1.html')
+              .work-image
+                img(src='images/work-5.jpg', alt='')
+              .work-caption.font-alt
+                h3.work-title Business Cards
+                .work-descr
+                  | Webdesign
+          // Portfolio item end
+          // Portfolio item start
+          li.work-item.marketing.webdesign
+            a(href='portfolio-single-1.html')
+              .work-image
+                img(src='images/work-6.jpg', alt='')
+              .work-caption.font-alt
+                h3.work-title Business Cards in paper clip
+                .work-descr
+                  | Marketing
+          // Portfolio item end
+        // Portfolio list end
+      // Portfolio end
+      // Callout start
+      section.module-small.bg-dark
+        .container
+          .row
+            .col-sm-6.col-md-8.col-lg-6.col-lg-offset-2
+              .callout-text.font-alt
+                h3.callout-title Want to see more works?
+                | 							We are always open to interesting projects.
+            .col-sm-6.col-md-4.col-lg-2
+              .callout-btn-box
+                a.btn.btn-w.btn-round(href='portfolio-wide-gutter-col3.html') Lets view portfolio
+          // .row
+      // Callout end
+      // Alt features start
+      section#alt-features.module
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Alt features
+              .module-subtitle.font-serif
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+          // .row
+          .row
+            .col-sm-6.col-md-3.col-lg-3
+              // Alt features item start
+              .alt-features-item
+                .alt-features-icon
+                  span.icon-strategy
+                h3.alt-features-title.font-alt Branding
+                | 							A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+              // Alt features item end
+              // Alt features item start
+              .alt-features-item
+                .alt-features-icon
+                  span.icon-tools-2
+                h3.alt-features-title.font-alt Development
+                | 							A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+              // Alt features item end
+              // Alt features item start
+              .alt-features-item
+                .alt-features-icon
+                  span.icon-target
+                h3.alt-features-title.font-alt Marketing
+                | 							A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+              // Alt features item end
+              // Alt features item start
+              .alt-features-item
+                .alt-features-icon
+                  span.icon-tools
+                h3.alt-features-title.font-alt Design
+                | 							A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+              // Alt features item end
+            // .col
+            // Alt features image start
+            .col-md-6.col-lg-6.hidden-xs.hidden-sm
+              .alt-services-image.align-center
+                img(src='images/promo.png', alt='')
+            // Alt features image end
+            .col-sm-6.col-md-3.col-lg-3
+              // Alt features item start
+              .alt-features-item
+                .alt-features-icon
+                  span.icon-camera
+                h3.alt-features-title.font-alt Photography
+                | 							A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+              // Alt features item end
+              // Alt features item start
+              .alt-features-item
+                .alt-features-icon
+                  span.icon-mobile
+                h3.alt-features-title.font-alt Mobile
+                | 							A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+              // Alt features item end
+              // Alt features item start
+              .alt-features-item
+                .alt-features-icon
+                  span.icon-linegraph
+                h3.alt-features-title.font-alt Music
+                | 							A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+              // Alt features item end
+              // Alt features item start
+              .alt-features-item
+                .alt-features-icon
+                  span.icon-basket
+                h3.alt-features-title.font-alt Shop
+                | 							A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+              // Alt features item end
+            // .col
+          // .row
+      // Alt features end
+      // Divider
+      hr.divider-w
+      // Divider
+      // Team start
+      section#team.module
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Meet Our Team
+              .module-subtitle.font-serif
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+          // .row
+          .row
+            // Team item star
+            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
+              .team-item
+                .team-image
+                  img(src='images/team-1.jpg', alt='')
+                  .team-detail
+                    h5.font-alt Hi all
+                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
+                    .team-social
+                      a(href='#')
+                        i.fa.fa-facebook
+                      a(href='#')
+                        i.fa.fa-twitter
+                      a(href='#')
+                        i.fa.fa-dribbble
+                      a(href='#')
+                        i.fa.fa-skype
+                .team-descr.font-alt
+                  .team-name Jim Stone
+                  .team-role Art Director
+            // Team item end
+            // Team item star
+            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
+              .team-item
+                .team-image
+                  img(src='images/team-2.jpg', alt='')
+                  .team-detail
+                    h5.font-alt Good day
+                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
+                    .team-social
+                      a(href='#')
+                        i.fa.fa-facebook
+                      a(href='#')
+                        i.fa.fa-twitter
+                      a(href='#')
+                        i.fa.fa-dribbble
+                      a(href='#')
+                        i.fa.fa-skype
+                .team-descr.font-alt
+                  .team-name Andy River
+                  .team-role Creative director
+            // Team item end
+            // Team item star
+            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
+              .team-item
+                .team-image
+                  img(src='images/team-3.jpg', alt='')
+                  .team-detail
+                    h5.font-alt Hello
+                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
+                    .team-social
+                      a(href='#')
+                        i.fa.fa-facebook
+                      a(href='#')
+                        i.fa.fa-twitter
+                      a(href='#')
+                        i.fa.fa-dribbble
+                      a(href='#')
+                        i.fa.fa-skype
+                .team-descr.font-alt
+                  .team-name Adele Snow
+                  .team-role Account manager
+            // Team item end
+            // Team item star
+            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
+              .team-item
+                .team-image
+                  img(src='images/team-4.jpg', alt='')
+                  .team-detail
+                    h5.font-alt Yes, it's me
+                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
+                    .team-social
+                      a(href='#')
+                        i.fa.fa-facebook
+                      a(href='#')
+                        i.fa.fa-twitter
+                      a(href='#')
+                        i.fa.fa-dribbble
+                      a(href='#')
+                        i.fa.fa-skype
+                .team-descr.font-alt
+                  .team-name Dylan Woods
+                  .team-role Developer
+            // Team item end
+          // .row
+      // Team end
+      // Count to start
+      section.module.bg-dark-60(data-background='images/section-1.jpg')
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Scoreboard
+          // .row
+          .row.multi-columns-row
+            // CountTo start
+            .col-sm-6.col-md-3.col-lg-3
+              .count-item.mb-sm-40
+                .count-icon
+                  span.icon-wallet
+                h3.count-to.font-alt(data-countto='6543')
+                h5.count-title.font-serif Dollars raised for charity
+            // CountTo end
+            // CountTo start
+            .col-sm-6.col-md-3.col-lg-3
+              .count-item.mb-sm-40
+                .count-icon
+                  span.icon-wine
+                h3.count-to.font-alt(data-countto='8')
+                h5.count-title.font-serif Cups of wine consumed
+            // CountTo end
+            // CountTo start
+            .col-sm-6.col-md-3.col-lg-3
+              .count-item.mb-sm-40
+                .count-icon
+                  span.icon-camera
+                h3.count-to.font-alt(data-countto='184')
+                h5.count-title.font-serif Photographs taken
+            // CountTo end
+            // CountTo start
+            .col-sm-6.col-md-3.col-lg-3
+              .count-item.mb-sm-40
+                .count-icon
+                  span.icon-map-pin
+                h3.count-to.font-alt(data-countto='32')
+                h5.count-title.font-serif Locations covered
+            // CountTo end
+          // .row
+      // Count to end
+      // Pricing start
+      section#pricing.module
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Pricing
+              .module-subtitle.font-serif
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+          // .row
+          .row.multi-columns-row
+            // Price table start
+            .col-sm-6.col-md-3.col-lg-3
+              .price-table.font-alt
+                h4 Light
+                .borderline
+                p.price
+                  span $
+                  | 9
+                ul.price-details
+                  li Free Support
+                  li 15 Demos Included
+                  li
+                    span Newsletter
+                  li
+                    span Working Contact Form
+                  li
+                    span Unlimited Domains
+                a.btn.btn-d.btn-round(href='#') Sign Up
+            // Price table end
+            // Price table start
+            .col-sm-6.col-md-3.col-lg-3
+              .price-table.font-alt
+                h4 Basic
+                .borderline
+                p.price
+                  span $
+                  | 29
+                ul.price-details
+                  li Free Support
+                  li 15 Demos Included
+                  li Newsletter
+                  li
+                    span Working Contact Form
+                  li
+                    span Unlimited Domains
+                a.btn.btn-d.btn-round(href='#') Sign Up
+            // Price table end
+            // Price table start
+            .col-sm-6.col-md-3.col-lg-3
+              .price-table.best.font-alt
+                h4 Advanced
+                p.small Best Choice
+                .borderline
+                p.price
+                  span $
+                  | 64
+                ul.price-details
+                  li Free Support
+                  li 20 Demos Included
+                  li Newsletter
+                  li Working Contact Form
+                  li
+                    span Unlimited Domains
+                a.btn.btn-d.btn-round(href='#') Sign Up
+            // Price table end
+            // Price table start
+            .col-sm-6.col-md-3.col-lg-3
+              .price-table.font-alt
+                h4 Ultimate
+                .borderline
+                p.price
+                  span $
+                  | 119
+                ul.price-details
+                  li Free Support
+                  li 15 Demos Included
+                  li Newsletter
+                  li Working Contact Form
+                  li Unlimited Domains
+                a.btn.btn-d.btn-round(href='#') Sign Up
+            // Price table end
+          // .row
+          .row.mt-40
+            .col-sm-6.col-sm-offset-3.align-center
+              p
+                | Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+          // .row
+      // Pricing end
+      // Testimonials start
+      section.module.bg-dark-60.pt-0.pb-0(data-background='images/section-7.jpg')
+        .testimonials-slider.pt-140.pb-140
+          ul.slides
+            // Slide 1 start
+            li
+              .container
+                .row
+                  .col-sm-12
+                    .module-icon
+                      span.icon-quote
+                // .row
+                .row
+                  .col-sm-8.col-sm-offset-2
+                    blockquote.testimonial-text.font-alt
+                      | I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+                // .row
+                .row
+                  .col-sm-4.col-sm-offset-4
+                    .testimonial-author
+                      .testimonial-caption.font-alt
+                        .testimonial-title Jack Woods
+                        .testimonial-descr SomeCompany INC, CEO
+                // .row
+              // .container
+            // Slide 1 end
+            // Slide 2 start
+            li
+              .container
+                .row
+                  .col-sm-12
+                    .module-icon
+                      span.icon-quote
+                // .row
+                .row
+                  .col-sm-8.col-sm-offset-2
+                    blockquote.testimonial-text.font-alt
+                      | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.
+                // .row
+                .row
+                  .col-sm-4.col-sm-offset-4
+                    .testimonial-author
+                      .testimonial-caption.font-alt
+                        .testimonial-title Jim Stone
+                        .testimonial-descr SomeCompany INC, CEO
+                // .row
+              // .container
+            // Slide 2 end
+            // Slide 3 start
+            li
+              .container
+                .row
+                  .col-sm-12
+                    .module-icon
+                      span.icon-quote
+                // .row
+                .row
+                  .col-sm-8.col-sm-offset-2
+                    blockquote.testimonial-text.font-alt
+                      | I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
+                // .row
+                .row
+                  .col-sm-4.col-sm-offset-4
+                    .testimonial-author
+                      .testimonial-caption.font-alt
+                        .testimonial-title Adele Snow
+                        .testimonial-descr SomeCompany INC, CEO
+                // .row
+              // .container
+            // Slide 3 end
+        // .testimonials-slider
+      // Testimonials end
+      // Latest blog posts start
+      section#news.module
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Latest blog posts
+              .module-subtitle.font-serif
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+          // .row
+          .row.multi-columns-row.post-columns
+            // Post item start
+            .col-sm-6.col-md-4.col-lg-4
+              .post.mb-20
+                .post-thumbnail
+                  a(href='blog-single-left.html')
+                    img(src='images/post-1.jpg', alt='')
+                .post-header.font-alt
+                  h2.post-title
+                    a(href='blog-single-left.html') Our trip to the Alps
+                  .post-meta
+                    | By 
+                    a(href='#') Mark Stone
+                    |  | 23 November | 3 Comments
+                .post-entry
+                  p
+                    | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                .post-more
+                  a.more-link(href='blog-single-right.html') Read more
+            // Post item end
+            // Post item start
+            .col-sm-6.col-md-4.col-lg-4
+              .post.mb-20
+                .post-thumbnail
+                  a(href='blog-single-left.html')
+                    img(src='images/post-2.jpg', alt='')
+                .post-header.font-alt
+                  h2.post-title
+                    a(href='blog-single-left.html') Shore after the tide
+                  .post-meta
+                    | By 
+                    a(href='#') Andy River
+                    |  | 11 November | 4 Comments
+                .post-entry
+                  p
+                    | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                .post-more
+                  a.more-link(href='blog-single-right.html') Read more
+            // Post item end
+            // Post item start
+            .col-sm-6.col-md-4.col-lg-4
+              .post.mb-20
+                .post-thumbnail
+                  a(href='blog-single-left.html')
+                    img(src='images/post-3.jpg', alt='')
+                .post-header.font-alt
+                  h2.post-title
+                    a(href='blog-single-left.html') We in New Zealand
+                  .post-meta
+                    | By 
+                    a(href='#') Dylan Woods
+                    |  | 5 November | 15 Comments
+                .post-entry
+                  p
+                    | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                .post-more
+                  a.more-link(href='blog-single-right.html') Read more
+            // Post item end
+          // .row
+      // Latest blog posts end
+      // Subscribe start
+      section.module-small.bg-dark
+        .container
+          .row
+            .col-sm-6.col-md-6.col-lg-4.col-lg-offset-2
+              .callout-text.font-alt
+                h3.callout-title Subscribe now
+                | 							We will not spam your email.
+            .col-sm-6.col-md-6.col-lg-4
+              .callout-btn-box
+                form#subscription-form(role='form')
+                  .input-group
+                    input#semail.form-control(type='email', name='semail', placeholder='Your Email', required='', data-validation-required-message='Please enter your email address.')
+                    span.input-group-btn
+                      button.btn.btn-g.btn-round(type='submit') Submit
+                // Ajax response
+                #subscription-response.ajax-response
+          // .row
+      // Subscribe end
+      // Contact start
+      section#contact.module
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Get in touch
+          // .row
+          .row
+            .col-sm-6.col-sm-offset-3
+              form#contact-form(role='form', novalidate='')
+                .form-group
+                  label.sr-only(for='cname') Name
+                  input#cname.form-control(type='text', name='cname', placeholder='Name*', required='', data-validation-required-message='Please enter your name.')
+                  p.help-block.text-danger
+                .form-group
+                  label.sr-only(for='cemail') Your Email
+                  input#cemail.form-control(type='email', name='cemail', placeholder='Your E-mail*', required='', data-validation-required-message='Please enter your email address.')
+                  p.help-block.text-danger
+                .form-group
+                  textarea#cmessage.form-control(name='cmessage', rows='7', placeholder='Message*', required='', data-validation-required-message='Please enter your message.')
+                  p.help-block.text-danger
+                .text-center
+                  button.btn.btn-block.btn-round.btn-d(type='submit') Submit
+              // Ajax response
+              #contact-response.ajax-response.font-alt
+          // .row
+      // Contact end
+      // Map start
+      //
+        <section id="map-section">
+        <div id="map"></div>
+        </section>
+      // Map end
+      // Widgets start
+      .module-small.bg-dark
+        .container
+          .row
+            .col-sm-3
+              // Widget start
+              .widget
+                h5.widget-title.font-alt About Rival
+                p
+                  | The languages only differ in their grammar, their pronunciation and their most common words.
+                p
+                  | Phone: +1 234 567 89 10
+                  br
+                  | Fax: +1 234 567 89 10
+                p
+                  | Email: 
+                  a(href='#') somecompany@example.com
+              // Widget end
+            .col-sm-3
+              // Widget start
+              .widget
+                h5.widget-title.font-alt Recent Comments
+                ul.icon-list
+                  li
+                    | Maria on 
+                    a(href='#') Designer Desk Essentials
+                  li
+                    | John on 
+                    a(href='#') Realistic Business Card Mockup
+                  li
+                    | Andy on 
+                    a(href='#') Eco bag Mockup
+                  li
+                    | Jack on 
+                    a(href='#') Bottle Mockup
+                  li
+                    | Mark on 
+                    a(href='#') Our trip to the Alps
+              // Widget end
+            .col-sm-3
+              // Widget start
+              .widget
+                h5.widget-title.font-alt Categories
+                ul.icon-list
+                  li
+                    a(href='#') Photography - 7
+                  li
+                    a(href='#') Web Design - 3
+                  li
+                    a(href='#') Illustration - 12
+                  li
+                    a(href='#') Marketing - 1
+                  li
+                    a(href='#') WordPress - 16
+              // Widget end
+            .col-sm-3
+              // Widget start
+              .widget
+                h5.widget-title.font-alt Popular posts
+                ul.widget-posts
+                  li.clearfix
+                    .widget-posts-image
+                      a(href='#')
+                        img(src='images/rp-1.jpg', alt='')
+                    .widget-posts-body
+                      .widget-posts-title
+                        a(href='#') Designer Desk Essentials
+                      .widget-posts-meta
+                        | 23 November
+                  li.clearfix
+                    .widget-posts-image
+                      a(href='#')
+                        img(src='images/rp-2.jpg', alt='')
+                    .widget-posts-body
+                      .widget-posts-title
+                        a(href='#') Realistic Business Card Mockup
+                      .widget-posts-meta
+                        | 15 November
+              // Widget end
+          // .row
+      // Widgets end
+      // Divider
+      hr.divider-d
+      // Divider
+      // Footer start
+      footer.footer.bg-dark
+        .container
+          .row
+            .col-sm-6
+              p.copyright.font-alt
+                | © 2015 
+                a(href='index.html') Rival
+                | , All Rights Reserved.
+            .col-sm-6
+              .footer-social-links
+                a(href='#')
+                  i.fa.fa-facebook
+                a(href='#')
+                  i.fa.fa-twitter
+                a(href='#')
+                  i.fa.fa-dribbble
+                a(href='#')
+                  i.fa.fa-skype
+          // .row
+      // Footer end
+    // Wrapper start
+    // Scroll-up
+    .scroll-up
+      a(href='#totop')
+        i.fa.fa-angle-double-up
+    // Javascript files
+    script(src='js/jquery-2.1.3.min.js')
+    script(src='bootstrap/js/bootstrap.min.js')
+    script(src='js/jquery.mb.YTPlayer.min.js')
+    script(src='js/appear.js')
+    script(src='js/jquery.simple-text-rotator.min.js')
+    script(src='js/jqBootstrapValidation.js')
+    //
+      <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+      <script src="js/gmaps.js"></script>
+    script(src='js/isotope.pkgd.min.js')
+    script(src='js/imagesloaded.pkgd.js')
+    script(src='js/jquery.flexslider-min.js')
+    script(src='js/jquery.magnific-popup.min.js')
+    script(src='js/jquery.fitvids.js')
+    script(src='js/smoothscroll.js')
+    script(src='js/wow.min.js')
+    script(src='js/owl.carousel.min.js')
+    script(src='js/contact.js')
+    script(src='js/custom.js')
