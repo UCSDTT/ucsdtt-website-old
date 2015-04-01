@@ -755,7 +755,7 @@ html(lang='en')
           // .row
           .row
             .col-sm-6.col-sm-offset-3
-              form#contact-form(role='form', novalidate='')
+              form#contact-form(role='form', novalidate='', action='/contact', name='contact', method='post')
                 .form-group
                   label.sr-only(for='cname') Name
                   input#cname.form-control(type='text', name='cname', placeholder='Name*', required='', data-validation-required-message='Please enter your name.')
