@@ -1375,8 +1375,10 @@ Portfolio
 	        transform: scale(1.1) rotate(2deg);
 }
 
+
+/*edit bottom Percentage below to fix outreach hover text placement*/
 .work-item:hover .work-caption {
-	bottom: 70%;
+	bottom: 50%;
 	opacity: 1;
 	z-index: 3;
 	-webkit-transform: translateY(50%);
