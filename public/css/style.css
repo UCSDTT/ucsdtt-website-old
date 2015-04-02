@@ -29,6 +29,13 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+.height-about {
+	height: 550px;
+	padding-top: 10%;
+	padding-bottom: 40%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
 
 iframe {
 	border: 0;

@@ -65,15 +65,16 @@ html(lang='en')
       </section >
     section#home.home-section.home-full-height.bg-dark-30(data-background='images/section-12.jpg')
       // Youtube player start
-      .video-player(data-property="{videoURL:'https://www.youtube.com/watch?v=MFZRJDWFhuY', containment:'.home-section', startAt:0, mute:true, autoPlay:true, loop:true, opacity:0.85, showControls:false, showYTLogo:false, vol:25}")
+      .video-player(data-property="{videoURL:'https://www.youtube.com/watch?v=MFZRJDWFhuY', containment:'.home-section', startAt:0, mute:true, autoPlay:true, loop:true, opacity:0.81, showControls:false, showYTLogo:false, vol:25}")
       // Youtube player end
       // Youtube controls start
-      .video-controls-box
-        .container
-          .video-controls
-            a#video-volume.fa.fa-volume-up(href='#')  
-            a#video-play.fa.fa-pause(href='#')  
-      // Youtube controls end
+      // .video-controls-box
+      //   .container
+      //     .video-controls
+      //       span background provided by FLYT Media
+      //       // a#video-volume.fa.fa-volume-up(href='#')  
+      //       // a#video-play.fa.fa-pause(href='#')  
+      // // Youtube controls end
       .hs-caption
         .caption-content
           .hs-title-size-1.font-alt.mb-30
@@ -81,8 +82,6 @@ html(lang='en')
           .hs-title-size-4.font-alt.mb-40
             | Theta Tau @ UCSD
           a.btn.btn-border-w.btn-round.section-scroll(href='#about') Learn More
-          
-          
     // Home end
     // Wrapper start
     .main
@@ -90,16 +89,20 @@ html(lang='en')
       section#about.module
         .container
           .row
-            .col-sm-12.col-sm-offset-0
+            .col-sm-3.col-sm-offset-0
+              img.height-about(src='images/post-masonry-1.jpg', alt='')
+            .col-sm-8.col-sm-offset-0
               h2.module-title.font-alt About UCSD Theta Tau
-              .module-subtitle.font-serif.large-text
+              .module-subtitle
                 | In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that. 
                 p 
                 | With the help of a Theta Tau alumni, Jennifer Young, thirteen founding fathers took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: Ashay Verma, Errynne Bell, Takahiro Kuwayama, Amelia Chu, Xiumei Wu, Chris Lam, Chuong Do, Joe Shao, Michelle Mojica, Tanakorn Best Techajongchareon, Scott Louie, Alan Leung, and John Phu Nguyen. 
                 p
                 | On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
+          .row
+            .col-sm-8.col-sm-offset-0
               h2.module-title.font-alt Theta Tau Origins
-              .module-subtitle.font-serif.large-text
+              .module-subtitle
                 | Theta Tau was originally founded as the "Society of Hammer and Tongs," on October 15, 1904 by Erich J. Schrader, Elwin L. Vinal, William M. Lewis, and Isaac B. Hanks at the University of Minnesota. The name was changed to Theta Tau at the fraternity's first national convention at the University of Minnesota in 1911. Since then, approximately 30,000 members have been initiated.
                 p
                 | The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship. The goals of the fraternity are to promote the social and professional development of its members during and after their college years. 
@@ -109,6 +112,9 @@ html(lang='en')
                 | . For any other questions regarding UCSD Theta Tau, please contact us 
                 a.section-scroll.link(href='#contact') here
                 | .
+            .col-sm-3.col-sm-offset-0
+              img.height-about(src='images/post-masonry-2.jpg', alt='')
+            
 
           // .row
           .row
@@ -137,7 +143,7 @@ html(lang='en')
                 .features-icon
                   span.icon-profile-male
                 h3.features-title.font-alt Brotherhood
-                | 							We strive to make the group as closely knit as possible throughout one’s college years. Our goal is to be one body, creating and maintaining lifelong brotherly bond.
+                | 							We strive to make the group as closely knit as possible throughout one’s college years. Our goal is to develop bonds between our brothers that will last a lifetime. 
             // Features end
             // Features start
             .col-sm-4.col-md-4.col-lg-4
@@ -364,96 +370,34 @@ html(lang='en')
         .container
           .row
             .col-sm-6.col-sm-offset-3
-              h2.module-title.font-alt Meet Our Team
+              h2.module-title.font-alt Meet Our Brothers
               .module-subtitle.font-serif
                 | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
           // .row
           .row
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-1.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Hi all
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Jim Stone
-                  .team-role Art Director
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-2.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Good day
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Andy River
-                  .team-role Creative director
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-3.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Hello
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Adele Snow
-                  .team-role Account manager
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-4.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Yes, it's me
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Dylan Woods
-                  .team-role Developer
-            // Team item end
-          // .row
+            - data = JSON.parse(data);
+            for member in data
+              // Team item star
+              .col-xs-2.col-sm-2.col-md-1.mb-sm-20
+                .team-item
+                  .team-image
+                    img(src='images/team-2.jpg', alt='')
+                    .team-detail
+                      //-h5.font-alt Good day
+                      //-p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
+                      //-.team-social
+                        //-a(href='#')
+                          //-i.fa.fa-facebook
+                        //-a(href='#')
+                          //-i.fa.fa-twitter
+                        //-a(href='#')
+                          //-i.fa.fa-dribbble
+                        //-a(href='#')
+                          //-i.fa.fa-skype
+                  .team-descr.font-alt
+                    //-.team-name #{member.id}
+                    //-.team-role Creative director
+              // Team item end
       // Team end
       // Count to start
       section.module.bg-dark-60(data-background='images/section-1.jpg')
@@ -647,7 +591,7 @@ html(lang='en')
                       | This is so dope.
                 // .row
                 .row
-                  .col-sm-4.col-sm-offset-4
+                  .col-sm-4.col-sm-offset-4j
                     .testimonial-author
                       .testimonial-caption.font-alt
                         .testimonial-title Alex "Gainz" Yang
