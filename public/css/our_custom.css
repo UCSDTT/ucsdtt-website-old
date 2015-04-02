@@ -1,0 +1,7 @@
+.sm-icon {
+	opacity: 0.7;
+}
+
+.sm-icon:hover{
+	opacity: 1;
+}
