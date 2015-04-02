@@ -127,7 +127,7 @@ html(lang='en')
       // Divider
       hr.divider-w
       // Divider
-      // Features start (TODO: add pillar icons/find pillar icons
+      // 3 Pillars Start
       section#features.module
         .container
           .row
@@ -136,7 +136,7 @@ html(lang='en')
               .module-subtitle.font-serif
                 | We, the brothers of Theta Tau, do our best to represent and embody the three pillars of our fraternity.
           //.row.multi-columns-row
-            // Features start
+          // Brotherhood Start
           .row
             .col-sm-4.col-md-4.col-lg-4
               .features-item
@@ -144,26 +144,27 @@ html(lang='en')
                   span.icon-profile-male
                 h3.features-title.font-alt Brotherhood
                 | 							We strive to make the group as closely knit as possible throughout one’s college years. Our goal is to develop bonds between our brothers that will last a lifetime. 
-            // Features end
-            // Features start
+            // Brotherhood end
+            // Professionalism start
             .col-sm-4.col-md-4.col-lg-4
               .features-item
                 .features-icon
                   span.icon-briefcase
                 h3.features-title.font-alt Professionalism
                 | 							We also seek to shape up one’s professional interests to prepare them for their life ahead of college. We plan various networking opportunities as well as events that provide a sneak peek at different professional careers.
-            // Features end
-            // Features start
+            // Professionalism end
+            // Philanthropy start
             .col-sm-4.col-md-4.col-lg-4
               .features-item
                 .features-icon
                   span.icon-heart
                 h3.features-title.font-alt Philanthropy
                 | 							For the purpose of our members’ personal growth, as well as our community’s benefits, we are involved in projects that give back to the community around us. Serving alongside brothers will establish strong bonds and also guarantee a truly meaningful time through one’s college years.
-            
+            //Philanthropy end
           // .row
         // .container
-      // Features end
+        //Three PIllars end
+      
       // Video start
       // section.module.bg-dark-60(data-background='images/section-6.jpg')
       //   .container
@@ -177,10 +178,10 @@ html(lang='en')
       //             | Presentation
       //           .video-subtitle.font-alt
       //             | Watch the video about our new products
-          // .row
+      //    .row
       // Video end
       hr.divider-w
-      // Portfolio start
+      // Public Events/Outreach start
       section#works.module.pb-0
         .container
           .row
@@ -270,7 +271,7 @@ html(lang='en')
                   | Description
           // Portfolio item end
         // Portfolio list end
-      // Portfolio end
+      // Public Events/Outreach end
       // Callout start
       // section.module-small.bg-dark
       //   .container
@@ -284,7 +285,7 @@ html(lang='en')
       //           a.btn.btn-w.btn-round(href='portfolio-wide-gutter-col3.html') Lets view portfolio
           // .row
       // Callout end
-      // Alt features start
+      // Rush start
       hr.divider-w
       section#alt-features.module
         .container
@@ -361,11 +362,11 @@ html(lang='en')
               // Alt features item end
             // .col
           // .row
-      // Alt features end
+      // Rush end
       // Divider
       hr.divider-w
       // Divider
-      // Team start
+      // Member Gallery start
       section#team.module
         .container
           .row
@@ -381,7 +382,8 @@ html(lang='en')
               .col-xs-2.col-sm-2.col-md-1.mb-sm-20
                 .team-item
                   .team-image
-                    img(src='images/team-2.jpg', alt='')
+                    a(href='..\views\memberpage.jade')#portrait
+                      img(src='images/team-2.jpg', alt='')
                     .team-detail
                       //-h5.font-alt Good day
                       //-p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
@@ -398,7 +400,7 @@ html(lang='en')
                     //-.team-name #{member.id}
                     //-.team-role Creative director
               // Team item end
-      // Team end
+      // Member Gallery end end
       // Count to start
       section.module.bg-dark-60(data-background='images/section-1.jpg')
         .container
@@ -853,3 +855,4 @@ html(lang='en')
     script(src='js/owl.carousel.min.js')
     script(src='js/contact.js')
     script(src='js/custom.js')
+    script(src='js/our_custom.js')
