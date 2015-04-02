@@ -17,6 +17,7 @@ html(lang='en')
     link(href='css/owl.carousel.css', rel='stylesheet')
     link(href='css/animate.css', rel='stylesheet')
     link(href='css/style.css', rel='stylesheet')
+    link(href='css/our_custom.css', rel='stylesheet')
   body
     // Preloader
     .page-loader
@@ -378,25 +379,26 @@ html(lang='en')
             for member in data
               // Team item star
               .col-xs-2.col-sm-2.col-md-1.mb-sm-20
-                .team-item
-                  .team-image
-                    img(src='#{member.img_path}', alt='')
-                    .team-detail
-                      //-h5.font-alt Good day
-                      //-p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                      //-.team-social
-                        //-a(href='#')
-                          //-i.fa.fa-facebook
-                        //-a(href='#')
-                          //-i.fa.fa-twitter
-                        //-a(href='#')
-                          //-i.fa.fa-dribbble
-                        //-a(href='#')
-                          //-i.fa.fa-skype
-                  .team-descr.font-alt
-                    //-.team-name #{member.id}
-                    //-.team-role Creative director
-              // Team item end
+                a(href='memberpage')#portrait
+                  .team-item
+                    .team-image
+                      img(src='images/team-2.jpg', alt='')
+                      .team-detail
+                        //-h5.font-alt Good day
+                        //-p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
+                        //-.team-social
+                          //-a(href='#')
+                            //-i.fa.fa-facebook
+                          //-a(href='#')
+                            //-i.fa.fa-twitter
+                          //-a(href='#')
+                            //-i.fa.fa-dribbble
+                          //-a(href='#')
+                            //-i.fa.fa-skype
+                    .team-descr.font-alt
+                      //-.team-name #{member.id}
+                      //-.team-role Creative director
+                // Team item end
       // Member Gallery end end
       // Count to start
       //-section.module.bg-dark-60(data-background='images/section-1.jpg')
@@ -694,7 +696,7 @@ html(lang='en')
         .container
           .row
             .col-sm-6.col-sm-offset-3
-              h2.module-title.font-alt Get in touch
+              h2.module-title.font-alt Get in Touch
           // .row
           .row
             .col-sm-6.col-sm-offset-3
@@ -802,21 +804,16 @@ html(lang='en')
       footer.footer.bg-dark
         .container
           .row
-            .col-sm-6
-              p.copyright.font-alt
-                | © 2015 
-                a(href='/') UCSD Theta Tau 
-                | , All Rights Reserved.
-            .col-sm-6
-              .footer-social-links
-                a(href='#')
-                  i.fa.fa-facebook
-                a(href='#')
-                  i.fa.fa-twitter
-                a(href='#')
-                  i.fa.fa-dribbble
-                a(href='#')
-                  i.fa.fa-skype
+            //fontawesome icons
+            .col-sm-2.col-sm-offset-5.col-xs-4.text-center
+              a(href='https://www.facebook.com/pages/Theta-Tau-UCSD/346680895436731?fref=ts')
+                i.fa.fa-facebook.fa-3x
+            //- |       
+            //- .col-sm-2.col-xs-4.text-center
+            //-   i.fa.fa-twitter.fa-4x.sm-icon
+            //- |       
+            //- .col-sm-2.col-xs-4.text-center
+            //-   i.fa.fa-instagram.fa-4x.sm-icon
           // .row
       // Footer end
     // Wrapper start

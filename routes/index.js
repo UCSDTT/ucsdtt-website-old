@@ -22,6 +22,10 @@ router.get('/', function(req, res) {
     });
 });
 
+router.get('/memberpage', function(req, res){
+  res.render('memberpage', {});
+});
+
 router.post('/contact', function(req, res){
   var transporter = nodemailer.createTransport({
     service: 'Gmail',
