@@ -4,7 +4,19 @@ var router = express.Router();
 
 
 router.get('/', function(req, res) {
-  res.render('index');
+  var members = [];
+
+  for(var i = 0; i < 20; i++) {
+      members.push({ 
+          "id": i,
+          "firstName" : "Alex",
+          "lastName"  : "Yang"
+      });
+  }
+
+  res.render('index', { 
+        data: JSON.stringify(members)
+  });
 });
 
 router.post('/contact', function(req, res){

@@ -364,96 +364,34 @@ html(lang='en')
         .container
           .row
             .col-sm-6.col-sm-offset-3
-              h2.module-title.font-alt Meet Our Team
+              h2.module-title.font-alt Meet Our Brothers
               .module-subtitle.font-serif
                 | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
           // .row
           .row
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-1.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Hi all
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Jim Stone
-                  .team-role Art Director
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-2.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Good day
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Andy River
-                  .team-role Creative director
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-3.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Hello
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Adele Snow
-                  .team-role Account manager
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-4.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Yes, it's me
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Dylan Woods
-                  .team-role Developer
-            // Team item end
-          // .row
+            - data = JSON.parse(data);
+            for member in data
+              // Team item star
+              .col-sm-3.col-md-1.mb-sm-20
+                .team-item
+                  .team-image
+                    img(src='images/team-2.jpg', alt='')
+                    .team-detail
+                      h5.font-alt Good day
+                      p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
+                      .team-social
+                        a(href='#')
+                          i.fa.fa-facebook
+                        a(href='#')
+                          i.fa.fa-twitter
+                        a(href='#')
+                          i.fa.fa-dribbble
+                        a(href='#')
+                          i.fa.fa-skype
+                  .team-descr.font-alt
+                    //-.team-name #{member.id}
+                    //-.team-role Creative director
+              // Team item end
       // Team end
       // Count to start
       section.module.bg-dark-60(data-background='images/section-1.jpg')
