@@ -14,9 +14,10 @@ var knex = exports.knex = require('knex')({
   connection: conString
 });
 
-
+var nodemailer = require('nodemailer');
 var routes = require('./routes/index');
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -82,7 +82,6 @@ html(lang='en')
           .hs-title-size-4.font-alt.mb-40
             | Theta Tau @ UCSD
           a.btn.btn-border-w.btn-round.section-scroll(href='#about') Learn More
-    span video provided by FLYT Media.
     // Home end
     // Wrapper start
     .main
@@ -90,16 +89,20 @@ html(lang='en')
       section#about.module
         .container
           .row
-            .col-sm-12.col-sm-offset-0
+            .col-sm-3.col-sm-offset-0
+              img.height-about(src='images/post-masonry-1.jpg', alt='')
+            .col-sm-8.col-sm-offset-0
               h2.module-title.font-alt About UCSD Theta Tau
-              .module-subtitle.font-serif.large-text
+              .module-subtitle
                 | In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that. 
                 p 
                 | With the help of a Theta Tau alumni, Jennifer Young, thirteen founding fathers took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: Ashay Verma, Errynne Bell, Takahiro Kuwayama, Amelia Chu, Xiumei Wu, Chris Lam, Chuong Do, Joe Shao, Michelle Mojica, Tanakorn Best Techajongchareon, Scott Louie, Alan Leung, and John Phu Nguyen. 
                 p
                 | On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
+          .row
+            .col-sm-8.col-sm-offset-0
               h2.module-title.font-alt Theta Tau Origins
-              .module-subtitle.font-serif.large-text
+              .module-subtitle
                 | Theta Tau was originally founded as the "Society of Hammer and Tongs," on October 15, 1904 by Erich J. Schrader, Elwin L. Vinal, William M. Lewis, and Isaac B. Hanks at the University of Minnesota. The name was changed to Theta Tau at the fraternity's first national convention at the University of Minnesota in 1911. Since then, approximately 30,000 members have been initiated.
                 p
                 | The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship. The goals of the fraternity are to promote the social and professional development of its members during and after their college years. 
@@ -109,6 +112,9 @@ html(lang='en')
                 | . For any other questions regarding UCSD Theta Tau, please contact us 
                 a.section-scroll.link(href='#contact') here
                 | .
+            .col-sm-3.col-sm-offset-0
+              img.height-about(src='images/post-masonry-2.jpg', alt='')
+            
 
           // .row
           .row
@@ -135,15 +141,15 @@ html(lang='en')
             .col-sm-4.col-md-4.col-lg-4
               .features-item
                 .features-icon
-                  span.icon-lightbulb
+                  span.icon-profile-male
                 h3.features-title.font-alt Brotherhood
-                | 							We strive to make the group as closely knit as possible throughout one’s college years. Our goal is to be one body, creating and maintaining lifelong brotherly bond.
+                | 							We strive to make the group as closely knit as possible throughout one’s college years. Our goal is to develop bonds between our brothers that will last a lifetime. 
             // Features end
             // Features start
             .col-sm-4.col-md-4.col-lg-4
               .features-item
                 .features-icon
-                  span.icon-lightbulb
+                  span.icon-briefcase
                 h3.features-title.font-alt Professionalism
                 | 							We also seek to shape up one’s professional interests to prepare them for their life ahead of college. We plan various networking opportunities as well as events that provide a sneak peek at different professional careers.
             // Features end
@@ -151,7 +157,7 @@ html(lang='en')
             .col-sm-4.col-md-4.col-lg-4
               .features-item
                 .features-icon
-                  span.icon-lightbulb
+                  span.icon-heart
                 h3.features-title.font-alt Philanthropy
                 | 							For the purpose of our members’ personal growth, as well as our community’s benefits, we are involved in projects that give back to the community around us. Serving alongside brothers will establish strong bonds and also guarantee a truly meaningful time through one’s college years.
             
@@ -173,6 +179,7 @@ html(lang='en')
       //             | Watch the video about our new products
           // .row
       // Video end
+      hr.divider-w
       // Portfolio start
       section#works.module.pb-0
         .container
@@ -278,6 +285,7 @@ html(lang='en')
           // .row
       // Callout end
       // Alt features start
+      hr.divider-w
       section#alt-features.module
         .container
           .row
@@ -362,96 +370,34 @@ html(lang='en')
         .container
           .row
             .col-sm-6.col-sm-offset-3
-              h2.module-title.font-alt Meet Our Team
+              h2.module-title.font-alt Meet Our Brothers
               .module-subtitle.font-serif
                 | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
           // .row
           .row
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-1.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Hi all
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Jim Stone
-                  .team-role Art Director
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-2.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Good day
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Andy River
-                  .team-role Creative director
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-3.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Hello
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Adele Snow
-                  .team-role Account manager
-            // Team item end
-            // Team item star
-            .col-sm-6.col-md-3.mb-sm-20.wow.fadeInUp
-              .team-item
-                .team-image
-                  img(src='images/team-4.jpg', alt='')
-                  .team-detail
-                    h5.font-alt Yes, it's me
-                    p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                    .team-social
-                      a(href='#')
-                        i.fa.fa-facebook
-                      a(href='#')
-                        i.fa.fa-twitter
-                      a(href='#')
-                        i.fa.fa-dribbble
-                      a(href='#')
-                        i.fa.fa-skype
-                .team-descr.font-alt
-                  .team-name Dylan Woods
-                  .team-role Developer
-            // Team item end
-          // .row
+            - data = JSON.parse(data);
+            for member in data
+              // Team item star
+              .col-sm-3.col-md-1.mb-sm-20
+                .team-item
+                  .team-image
+                    img(src='images/team-2.jpg', alt='')
+                    .team-detail
+                      h5.font-alt Good day
+                      p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
+                      .team-social
+                        a(href='#')
+                          i.fa.fa-facebook
+                        a(href='#')
+                          i.fa.fa-twitter
+                        a(href='#')
+                          i.fa.fa-dribbble
+                        a(href='#')
+                          i.fa.fa-skype
+                  .team-descr.font-alt
+                    //-.team-name #{member.id}
+                    //-.team-role Creative director
+              // Team item end
       // Team end
       // Count to start
       section.module.bg-dark-60(data-background='images/section-1.jpg')
@@ -496,92 +442,92 @@ html(lang='en')
           // .row
       // Count to end
       // Pricing start
-      section#pricing.module
-        .container
-          .row
-            .col-sm-6.col-sm-offset-3
-              h2.module-title.font-alt Pricing
-              .module-subtitle.font-serif
-                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
-          // .row
-          .row.multi-columns-row
-            // Price table start
-            .col-sm-6.col-md-3.col-lg-3
-              .price-table.font-alt
-                h4 Light
-                .borderline
-                p.price
-                  span $
-                  | 9
-                ul.price-details
-                  li Free Support
-                  li 15 Demos Included
-                  li
-                    span Newsletter
-                  li
-                    span Working Contact Form
-                  li
-                    span Unlimited Domains
-                a.btn.btn-d.btn-round(href='#') Sign Up
-            // Price table end
-            // Price table start
-            .col-sm-6.col-md-3.col-lg-3
-              .price-table.font-alt
-                h4 Basic
-                .borderline
-                p.price
-                  span $
-                  | 29
-                ul.price-details
-                  li Free Support
-                  li 15 Demos Included
-                  li Newsletter
-                  li
-                    span Working Contact Form
-                  li
-                    span Unlimited Domains
-                a.btn.btn-d.btn-round(href='#') Sign Up
-            // Price table end
-            // Price table start
-            .col-sm-6.col-md-3.col-lg-3
-              .price-table.best.font-alt
-                h4 Advanced
-                p.small Best Choice
-                .borderline
-                p.price
-                  span $
-                  | 64
-                ul.price-details
-                  li Free Support
-                  li 20 Demos Included
-                  li Newsletter
-                  li Working Contact Form
-                  li
-                    span Unlimited Domains
-                a.btn.btn-d.btn-round(href='#') Sign Up
-            // Price table end
-            // Price table start
-            .col-sm-6.col-md-3.col-lg-3
-              .price-table.font-alt
-                h4 Ultimate
-                .borderline
-                p.price
-                  span $
-                  | 119
-                ul.price-details
-                  li Free Support
-                  li 15 Demos Included
-                  li Newsletter
-                  li Working Contact Form
-                  li Unlimited Domains
-                a.btn.btn-d.btn-round(href='#') Sign Up
-            // Price table end
-          // .row
-          .row.mt-40
-            .col-sm-6.col-sm-offset-3.align-center
-              p
-                | Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
-          // .row
+      // section#pricing.module
+      //   .container
+      //     .row
+      //       .col-sm-6.col-sm-offset-3
+      //         h2.module-title.font-alt Pricing
+      //         .module-subtitle.font-serif
+      //           | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+      //     // .row
+      //     .row.multi-columns-row
+      //       // Price table start
+      //       .col-sm-6.col-md-3.col-lg-3
+      //         .price-table.font-alt
+      //           h4 Light
+      //           .borderline
+      //           p.price
+      //             span $
+      //             | 9
+      //           ul.price-details
+      //             li Free Support
+      //             li 15 Demos Included
+      //             li
+      //               span Newsletter
+      //             li
+      //               span Working Contact Form
+      //             li
+      //               span Unlimited Domains
+      //           a.btn.btn-d.btn-round(href='#') Sign Up
+      //       // Price table end
+      //       // Price table start
+      //       .col-sm-6.col-md-3.col-lg-3
+      //         .price-table.font-alt
+      //           h4 Basic
+      //           .borderline
+      //           p.price
+      //             span $
+      //             | 29
+      //           ul.price-details
+      //             li Free Support
+      //             li 15 Demos Included
+      //             li Newsletter
+      //             li
+      //               span Working Contact Form
+      //             li
+      //               span Unlimited Domains
+      //           a.btn.btn-d.btn-round(href='#') Sign Up
+      //       // Price table end
+      //       // Price table start
+      //       .col-sm-6.col-md-3.col-lg-3
+      //         .price-table.best.font-alt
+      //           h4 Advanced
+      //           p.small Best Choice
+      //           .borderline
+      //           p.price
+      //             span $
+      //             | 64
+      //           ul.price-details
+      //             li Free Support
+      //             li 20 Demos Included
+      //             li Newsletter
+      //             li Working Contact Form
+      //             li
+      //               span Unlimited Domains
+      //           a.btn.btn-d.btn-round(href='#') Sign Up
+      //       // Price table end
+      //       // Price table start
+      //       .col-sm-6.col-md-3.col-lg-3
+      //         .price-table.font-alt
+      //           h4 Ultimate
+      //           .borderline
+      //           p.price
+      //             span $
+      //             | 119
+      //           ul.price-details
+      //             li Free Support
+      //             li 15 Demos Included
+      //             li Newsletter
+      //             li Working Contact Form
+      //             li Unlimited Domains
+      //           a.btn.btn-d.btn-round(href='#') Sign Up
+      //       // Price table end
+      //     // .row
+      //     .row.mt-40
+      //       .col-sm-6.col-sm-offset-3.align-center
+      //         p
+      //           | Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+      //     // .row
       // Pricing end
       // Testimonials start
       section.module.bg-dark-60.pt-0.pb-0(data-background='images/section-7.jpg')
@@ -598,14 +544,14 @@ html(lang='en')
                 .row
                   .col-sm-8.col-sm-offset-2
                     blockquote.testimonial-text.font-alt
-                      | I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+                      | I love the smell of feet after a long, sweaty night's rest.
                 // .row
                 .row
                   .col-sm-4.col-sm-offset-4
                     .testimonial-author
                       .testimonial-caption.font-alt
-                        .testimonial-title Jack Woods
-                        .testimonial-descr SomeCompany INC, CEO
+                        .testimonial-title Michael "Footsie" Luo
+                        .testimonial-descr Feet Lovers' Club, CEO
                 // .row
               // .container
             // Slide 1 end
@@ -620,14 +566,14 @@ html(lang='en')
                 .row
                   .col-sm-8.col-sm-offset-2
                     blockquote.testimonial-text.font-alt
-                      | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.
+                      | I f***ing love cats. 
                 // .row
                 .row
                   .col-sm-4.col-sm-offset-4
                     .testimonial-author
                       .testimonial-caption.font-alt
-                        .testimonial-title Jim Stone
-                        .testimonial-descr SomeCompany INC, CEO
+                        .testimonial-title Jamie "Meowzer" Yang
+                        .testimonial-descr Meowzer Advocates Inc., Marketing Representative
                 // .row
               // .container
             // Slide 2 end
@@ -642,14 +588,14 @@ html(lang='en')
                 .row
                   .col-sm-8.col-sm-offset-2
                     blockquote.testimonial-text.font-alt
-                      | I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
+                      | This is so dope.
                 // .row
                 .row
                   .col-sm-4.col-sm-offset-4j
                     .testimonial-author
                       .testimonial-caption.font-alt
-                        .testimonial-title Adele Snow
-                        .testimonial-descr SomeCompany INC, CEO
+                        .testimonial-title Alex "Gainz" Yang
+                        .testimonial-descr 24 Hour Fitness, Bulking Coach
                 // .row
               // .container
             // Slide 3 end
@@ -660,9 +606,9 @@ html(lang='en')
         .container
           .row
             .col-sm-6.col-sm-offset-3
-              h2.module-title.font-alt Latest blog posts
+              h2.module-title.font-alt Calendar soon to be...
               .module-subtitle.font-serif
-                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                | I love calendars. Calendars love me.
           // .row
           .row.multi-columns-row.post-columns
             // Post item start
@@ -725,25 +671,26 @@ html(lang='en')
           // .row
       // Latest blog posts end
       // Subscribe start
-      section.module-small.bg-dark
-        .container
-          .row
-            .col-sm-6.col-md-6.col-lg-4.col-lg-offset-2
-              .callout-text.font-alt
-                h3.callout-title Subscribe now
-                | 							We will not spam your email.
-            .col-sm-6.col-md-6.col-lg-4
-              .callout-btn-box
-                form#subscription-form(role='form')
-                  .input-group
-                    input#semail.form-control(type='email', name='semail', placeholder='Your Email', required='', data-validation-required-message='Please enter your email address.')
-                    span.input-group-btn
-                      button.btn.btn-g.btn-round(type='submit') Submit
-                // Ajax response
-                #subscription-response.ajax-response
+      // section.module-small.bg-dark
+      //   .container
+      //     .row
+      //       .col-sm-6.col-md-6.col-lg-4.col-lg-offset-2
+      //         .callout-text.font-alt
+      //           h3.callout-title Subscribe now
+      //           | 							We will not spam your email.
+      //       .col-sm-6.col-md-6.col-lg-4
+      //         .callout-btn-box
+      //           form#subscription-form(role='form')
+      //             .input-group
+      //               input#semail.form-control(type='email', name='semail', placeholder='Your Email', required='', data-validation-required-message='Please enter your email address.')
+      //               span.input-group-btn
+      //                 button.btn.btn-g.btn-round(type='submit') Submit
+      //           // Ajax response
+      //           #subscription-response.ajax-response
           // .row
       // Subscribe end
       // Contact start
+      hr.divider-w
       section#contact.module
         .container
           .row
@@ -752,7 +699,7 @@ html(lang='en')
           // .row
           .row
             .col-sm-6.col-sm-offset-3
-              form#contact-form(role='form', novalidate='')
+              form#contact-form(role='form', novalidate='', action='/contact', name='contact', method='post')
                 .form-group
                   label.sr-only(for='cname') Name
                   input#cname.form-control(type='text', name='cname', placeholder='Name*', required='', data-validation-required-message='Please enter your name.')
