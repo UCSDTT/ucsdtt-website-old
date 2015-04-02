@@ -26,7 +26,7 @@ html(lang='en')
     nav.navbar.navbar-custom.navbar-transparent.navbar-fixed-top.one-page(role='navigation')
       .container.top_bar
         .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#custom-collapse')
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#custom-collapse').mobile_menu_button
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
@@ -94,7 +94,7 @@ html(lang='en')
         .container
           .row
             .col-md-7
-              h2.module-title.font-alt About UCSD Theta Tau
+              h2.module-title.font-alt About Theta Tau @ UCSD
               .module-subtitle
                 | In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that. 
                 p 
@@ -150,11 +150,12 @@ html(lang='en')
           .row
             .col-sm-6.col-sm-offset-3
               h2.module-title.font-alt Three Pillars
-              .module-subtitle.font-serif
-                | We, the brothers of Theta Tau, do our best to represent and embody the three pillars of our fraternity.
+              .module-subtitle.font-serif(style="text-align:center;")
+                | We, as brothers of Theta Tau, strive to embody the three pillars of our fraternity.
           //.row.multi-columns-row
           // Brotherhood Start
           .row
+            .col-sm-1.co-md-1.col-lg-1
             .col-sm-4.col-md-4.col-lg-4
               .features-item
                 .features-icon
@@ -162,6 +163,7 @@ html(lang='en')
                 h3.features-title.font-alt Brotherhood
                 | 							We strive to make the group as closely knit as possible throughout one’s college years. Our goal is to develop bonds between our brothers that will last a lifetime. We foster an inviting, safe, and social environment in which our members become lifelong friends.
             // Brotherhood end
+            .col-sm-2.co-md-2.col-lg-2
             // Professionalism start
             .col-sm-4.col-md-4.col-lg-4
               .features-item
@@ -170,13 +172,18 @@ html(lang='en')
                 h3.features-title.font-alt Professionalism
                 | 							We also seek to shape up one’s professional interests to prepare them for their life ahead of college. We plan various networking opportunities as well as events that provide a sneak peek at different professional careers.
             // Professionalism end
+            .col-sm-1.co-md-1.col-lg-1
+          section(style="height:75px;")
+          .row
             // Philanthropy start
+            .col-sm-4.col-md-4.col-lg-4
             .col-sm-4.col-md-4.col-lg-4
               .features-item
                 .features-icon
                   span.icon-heart
                 h3.features-title.font-alt Philanthropy
                 | 							For the purpose of our members’ personal growth, as well as our community’s benefits, we are involved in projects that give back to the community around us. Serving alongside brothers will establish strong bonds and also guarantee a truly meaningful time through one’s college years.
+            .col-sm-4.col-md-4.col-lg-4
             //Philanthropy end
           // .row
         // .container
@@ -198,6 +205,7 @@ html(lang='en')
       //    .row
       // Video end
       hr.divider-w
+      section.module.bg-dark-60.pt-0.pb-0(style="height:400px;", data-background='images/jimmy_and_alex.jpg')
       // Portfolio start
       section#works.module.pb-0
         .container
@@ -226,9 +234,9 @@ html(lang='en')
               .work-image
                 img(src='http://c1.staticflickr.com/9/8517/8489997983_157022a086_b.jpg', alt='')
               .work-caption.font-alt
-                h3.work-title Extra Life
+                h3.work-title Extra Life 2013
                 .work-descr
-                  | Gaming for Charity
+                  | Gaming to Raise Money for Children's Hospitals
           // Portfolio item end
           // Portfolio item start
           li.work-item.brotherhood.professional
@@ -236,9 +244,9 @@ html(lang='en')
               .work-image
                 img(src='http://c2.staticflickr.com/6/5522/14374833362_0425d01f40_b.jpg', alt='')
               .work-caption.font-alt
-                h3.work-title Graduation
+                h3.work-title Celebrating Graduation, 2014
                 .work-descr
-                  | Brothers Forever
+                  | Congratulations to Our New Alumni!
           // Portfolio item end
           // Portfolio item start
           li.work-item.professional
@@ -246,9 +254,9 @@ html(lang='en')
               .work-image
                 img(src='http://c4.staticflickr.com/4/3828/8941220266_072dcb4a72_b.jpg', alt='')
               .work-caption.font-alt
-                h3.work-title Professional Dinner
+                h3.work-title Alumni Professionalism Dinner, 2013
                 .work-descr
-                  | Reconnecting with Alumni
+                  | Networking with Professionals, Connecting with Friends
           // Portfolio item end
           // Portfolio item start
           li.work-item.brotherhood
@@ -256,9 +264,9 @@ html(lang='en')
               .work-image
                 img(src='http://c1.staticflickr.com/9/8102/8527762513_aebcc8fb11_b.jpg', alt='')
               .work-caption.font-alt
-                h3.work-title Western Regionals
+                h3.work-title Western Regionals 2012
                 .work-descr
-                  | Meeting Brothers from Across the Nation
+                  | Sharing Our Brotherhood with Fellow Chapters
           // Portfolio item end
           // Portfolio item start
           li.work-item.philanthropy
@@ -266,9 +274,9 @@ html(lang='en')
               .work-image
                 img(src='http://c4.staticflickr.com/4/3896/14406986973_5bf1b7a8b7_c.jpg', alt='')
               .work-caption.font-alt
-                h3.work-title Date Auction
+                h3.work-title Date Auction, 2014
                 .work-descr
-                  | Raising Money Against Cancer
+                  | Raising Money For Cancer Research
           // Portfolio item end
           // Portfolio item start
           li.work-item.professional.brotherhood
@@ -276,9 +284,9 @@ html(lang='en')
               .work-image
                 img(src='http://c4.staticflickr.com/4/3767/11939623245_b50333eb6e_c.jpg', alt='')
               .work-caption.font-alt
-                h3.work-title Initiation Ceremony
+                h3.work-title Iota Class Initiation Ceremony, 2013
                 .work-descr
-                  | A New Generation of Brothers
+                  | Welcoming A New Generation of Brothers
           // Portfolio item end
         // Portfolio list end
       // Portfolio end
@@ -378,6 +386,8 @@ html(lang='en')
       // Rush end
       // Divider
       hr.divider-w
+      section.module.bg-dark-60.pt-0.pb-0(data-background='images/section-7.jpg')
+        section.module.bg-dark-60.pt-0.pb-0(style="height:400px;opacity:0.65;", data-background='images/kappas.jpg')
       // Divider
       // Member Gallery start
       section#team.module
@@ -642,26 +652,26 @@ html(lang='en')
                   a.more-link(href='blog-single-right.html') Read more
             // Post item end
           // .row
-      // Latest blog posts end
-      // Subscribe start
-      // section.module-small.bg-dark
-      //   .container
-      //     .row
-      //       .col-sm-6.col-md-6.col-lg-4.col-lg-offset-2
-      //         .callout-text.font-alt
-      //           h3.callout-title Subscribe now
-      //           | 							We will not spam your email.
-      //       .col-sm-6.col-md-6.col-lg-4
-      //         .callout-btn-box
-      //           form#subscription-form(role='form')
-      //             .input-group
-      //               input#semail.form-control(type='email', name='semail', placeholder='Your Email', required='', data-validation-required-message='Please enter your email address.')
-      //               span.input-group-btn
-      //                 button.btn.btn-g.btn-round(type='submit') Submit
-      //           // Ajax response
-      //           #subscription-response.ajax-response
-          // .row
-      // Subscribe end
+      //- // Latest blog posts end
+      //- // Subscribe start
+      //- // section.module-small.bg-dark
+      //-    .container
+      //-      .row
+      //-        .col-sm-6.col-md-6.col-lg-4.col-lg-offset-2
+      //-          .callout-text.font-alt
+      //-            h3.callout-title Subscribe now
+      //-            | 							We will not spam your email.
+      //-        .col-sm-6.col-md-6.col-lg-4
+      //-          .callout-btn-box
+      //-            form#subscription-form(role='form')
+      //-              .input-group
+      //-                input#semail.form-control(type='email', name='semail', placeholder='Your Email', required='', data-validation-required-message='Please enter your email address.')
+      //-                span.input-group-btn
+      //-                  button.btn.btn-g.btn-round(type='submit') Submit
+      //-            // Ajax response
+      //-            #subscription-response.ajax-response
+      //-     // .row
+      //- // Subscribe end
       // Contact start
       hr.divider-w
       section#contact.module
@@ -703,37 +713,57 @@ html(lang='en')
             .col-sm-4
               // Widget start
               .widget
-                h5.widget-title.font-alt Created By
-                ul.icon-list
-                  li
-                    | Benjie Genchel
-                    a(href='#') Eta Class Fall 2012
-                  li
-                    | Alex Yang
-                    a(href='#') Eta Class Fall 2012
-                  li
-                    | Michael Luo
-                    a(href='#') Iota Class Spring 2013
+                h5.widget-title.font-alt About Theta Tau
+                p
+                  | The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship.
+                p
+                  | Phone: +1 415 595 5985
+                p
+                  | Email: 
+                  a(href='#') ttsdwebmaster@gmail.com
               // Widget end
             .col-sm-4
               // Widget start
               .widget
-                h5.widget-title.font-alt Neighboring Chapters
+                h5.widget-title.font-alt Visit Our Neighboring Chapters
                 ul.icon-list
+                  li
+                    a(href='http://www.thetatauuci.com/') UC Irvine
+                  li
+                    a(href='http://www.thetataubruins.org/') UC Los Angeles
+                  li
+                    a(href='http://www.engr.ucr.edu/~thetatau/') UC Riverside
                   li
                     a(href='#') UC Berkeley
                   li
-                    a(href='#') UC Irvine
+                    a(href='http://www.mdthetatau.org/') UC Merced
                   li
-                    a(href='#') UC Los Angeles
-                  li
-                    a(href='#') UC Riverside
-                  li
-                    a(href='#') UC Merced
+                    a(href='http://www.davisthetatau.com/') UC Davis
               // Widget end
             .col-sm-4
               // Widget start
               .widget
+                h5.widget-title.font-alt Website Created By
+                ul.icon-list
+                  li
+                    | Benjie Genchel
+                    a() Eta Class, Fall 2012
+                  li
+                    | Alex Yang
+                    a() Eta Class, Fall 2012
+                  li
+                    | Michael Luo
+                    a() Iota Class, Fall 2013
+                  li
+                    | Jamie Yang
+                    a() Eta Class, Fall 2012
+                  li
+                    | Daniel Kang
+                    a() Theta Class, Spring 2013
+                  li
+                    | Kyle Zhu
+                    a() Kappa Class, Spring 2014
+              // Widget end
                 h5.widget-title.font-alt About Theta Tau
                 p
                   | The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship.
@@ -783,11 +813,11 @@ html(lang='en')
             |       
             .col-sm-2.col-xs-4.text-center
               a(title="Coming Soon")
-                i.fa.fa-twitter.fa-4x
+                i.fa.fa-twitter.fa-3x
             |       
             .col-sm-2.col-xs-4.text-center
               a(title="Coming Soon")
-                i.fa.fa-instagram.fa-4x
+                i.fa.fa-instagram.fa-3x
           // .row
       // Footer end
     // Wrapper start

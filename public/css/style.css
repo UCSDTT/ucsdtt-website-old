@@ -1929,6 +1929,8 @@ Responsive Media Querries
 	.navbar-custom .navbar-nav {
 		margin-top: 1px;
 		margin-bottom: 0;
+		background: black;
+		opacity: 0.8;
 	}
 
 	.navbar-custom li a:hover {
