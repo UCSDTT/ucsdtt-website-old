@@ -1006,6 +1006,10 @@ Services, Content box
 	margin: 0 0 10px;
 }
 
+.alt-services-image {
+	height: auto;
+	width: 90%;
+}
 /* Content box */
 
 .content-box {
