@@ -24,16 +24,17 @@ html(lang='en')
       .loader Loading...
     // Navigation start
     nav.navbar.navbar-custom.navbar-transparent.navbar-fixed-top.one-page(role='navigation')
-      .container
+      .container.top_bar
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='#custom-collapse')
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#totop') TT
+          a.navbar-brand(href='#totop')
+            img(src="images/tt_logo.png").header_img
         #custom-collapse.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
+          ul.nav.navbar-nav.navbar-right.menu_items
             li
               a(href='#totop') Home
             li
@@ -818,15 +819,17 @@ html(lang='en')
         .container
           .row
             //fontawesome icons
-            .col-sm-2.col-sm-offset-5.col-xs-4.text-center
+            .col-sm-2.col-sm-offset-3.col-xs-4.text-center
               a(href='https://www.facebook.com/pages/Theta-Tau-UCSD/346680895436731?fref=ts')
                 i.fa.fa-facebook.fa-3x
-            //- |       
-            //- .col-sm-2.col-xs-4.text-center
-            //-   i.fa.fa-twitter.fa-4x.sm-icon
-            //- |       
-            //- .col-sm-2.col-xs-4.text-center
-            //-   i.fa.fa-instagram.fa-4x.sm-icon
+            |       
+            .col-sm-2.col-xs-4.text-center
+              a(title="Coming Soon")
+                i.fa.fa-twitter.fa-4x
+            |       
+            .col-sm-2.col-xs-4.text-center
+              a(title="Coming Soon")
+                i.fa.fa-instagram.fa-4x
           // .row
       // Footer end
     // Wrapper start
