@@ -39,7 +39,7 @@ img {
 
 .originImg{
   height: auto;
-  padding-bottom: 20%;
+  padding-bottom: 5%;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -843,7 +843,7 @@ Sections
 
 .module-subtitle {
 	text-align: left;
-	font-size: 16px;
+	font-size: 14px;
 	color: #111;
 	margin-bottom: 70px;
 }
