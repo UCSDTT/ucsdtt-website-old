@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var dotenv = require('dotenv');
 
 var port = process.env.PORT || 2014;
+var nodemailer = require('nodemailer');
 
 dotenv.load();
 var pg = require('pg');
