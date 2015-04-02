@@ -30,11 +30,18 @@ img {
 	height: auto;
 }
 .height-about {
-	height: 550px;
-	padding-top: 10%;
-	padding-bottom: 40%;
-	margin-left: 0px;
-	margin-right: 0px;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.originImg{
+  height: auto;
+  padding-bottom: 20%;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 iframe {
