@@ -1,9 +1,23 @@
 var express = require('express');
+
 var path = require('path');
 var bodyParser = require('body-parser');
+var dotenv = require('dotenv');
 
+var port = process.env.PORT || 2014;
+
+dotenv.load();
+var pg = require('pg');
+var conString = process.env.DB_CREDENTIALS;
+var knex = exports.knex = require('knex')({
+  client: 'pg',
+  connection: conString
+});
+
+var nodemailer = require('nodemailer');
 var routes = require('./routes/index');
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
