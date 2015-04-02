@@ -38,13 +38,15 @@ html(lang='en')
             li
               a.section-scroll(href='#about') About
             li
-              a.section-scroll(href='#works') Rush
+              a.section-scroll(href='#events') Events
+            li
+              a.section-scroll(href='#rush') Rush
             li
               a.section-scroll(href='#team') Members
-            li
-              a.section-scroll(href='#pricing') Current Engineering
-            li
-              a.section-scroll(href='#news') News
+            //-li
+              //-a.section-scroll(href='#pricing') Current Engineering
+            //-li
+              //-a.section-scroll(href='#news') News
             li
               a.section-scroll(href='#contact') Contact
     // Navigation end
@@ -181,7 +183,7 @@ html(lang='en')
       // Video end
       hr.divider-w
       // Portfolio start
-      section#works.module.pb-0
+      section#events.module.pb-0
         .container
           .row
             .col-sm-6.col-sm-offset-3
@@ -286,7 +288,7 @@ html(lang='en')
       // Callout end
       // Alt features start
       hr.divider-w
-      section#alt-features.module
+      section#rush.module
         .container
           .row
             .col-sm-6.col-sm-offset-3
@@ -381,7 +383,7 @@ html(lang='en')
               .col-xs-2.col-sm-2.col-md-1.mb-sm-20
                 .team-item
                   .team-image
-                    img(src='images/team-2.jpg', alt='')
+                    img(src='#{member.img_path}', alt='')
                     .team-detail
                       //-h5.font-alt Good day
                       //-p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
@@ -400,44 +402,44 @@ html(lang='en')
               // Team item end
       // Team end
       // Count to start
-      section.module.bg-dark-60(data-background='images/section-1.jpg')
-        .container
-          .row
-            .col-sm-6.col-sm-offset-3
-              h2.module-title.font-alt Scoreboard
-          // .row
-          .row.multi-columns-row
-            // CountTo start
-            .col-sm-6.col-md-3.col-lg-3
-              .count-item.mb-sm-40
-                .count-icon
-                  span.icon-wallet
-                h3.count-to.font-alt(data-countto='6543')
-                h5.count-title.font-serif Dollars raised for charity
-            // CountTo end
-            // CountTo start
-            .col-sm-6.col-md-3.col-lg-3
-              .count-item.mb-sm-40
-                .count-icon
-                  span.icon-wine
-                h3.count-to.font-alt(data-countto='8')
-                h5.count-title.font-serif Cups of wine consumed
-            // CountTo end
-            // CountTo start
-            .col-sm-6.col-md-3.col-lg-3
-              .count-item.mb-sm-40
-                .count-icon
-                  span.icon-camera
-                h3.count-to.font-alt(data-countto='184')
-                h5.count-title.font-serif Photographs taken
-            // CountTo end
-            // CountTo start
-            .col-sm-6.col-md-3.col-lg-3
-              .count-item.mb-sm-40
-                .count-icon
-                  span.icon-map-pin
-                h3.count-to.font-alt(data-countto='32')
-                h5.count-title.font-serif Locations covered
+      //-section.module.bg-dark-60(data-background='images/section-1.jpg')
+        //-.container
+          //-.row
+            //-.col-sm-6.col-sm-offset-3
+              //-h2.module-title.font-alt Scoreboard
+          //-// .row
+          //-.row.multi-columns-row
+            //-// CountTo start
+            //-.col-sm-6.col-md-3.col-lg-3
+              //-.count-item.mb-sm-40
+                //-.count-icon
+                  //-span.icon-wallet
+                //-h3.count-to.font-alt(data-countto='6543')
+                //-h5.count-title.font-serif Dollars raised for charity
+            //-// CountTo end
+            //-// CountTo start
+            //-.col-sm-6.col-md-3.col-lg-3
+              //-.count-item.mb-sm-40
+                //-.count-icon
+                  //-span.icon-wine
+                //-h3.count-to.font-alt(data-countto='8')
+                //-h5.count-title.font-serif Cups of wine consumed
+            //-// CountTo end
+            //-// CountTo start
+            //-.col-sm-6.col-md-3.col-lg-3
+              //-.count-item.mb-sm-40
+                //-.count-icon
+                  //-span.icon-camera
+                //-h3.count-to.font-alt(data-countto='184')
+                //-h5.count-title.font-serif Photographs taken
+            //-// CountTo end
+            //-// CountTo start
+            //-.col-sm-6.col-md-3.col-lg-3
+              //-.count-item.mb-sm-40
+                //-.count-icon
+                  //-span.icon-map-pin
+                //-h3.count-to.font-alt(data-countto='32')
+                //-h5.count-title.font-serif Locations covered
             // CountTo end
           // .row
       // Count to end
@@ -602,7 +604,7 @@ html(lang='en')
         // .testimonials-slider
       // Testimonials end
       // Latest blog posts start
-      section#news.module
+      //-section#news.module
         .container
           .row
             .col-sm-6.col-sm-offset-3
@@ -727,80 +729,72 @@ html(lang='en')
       .module-small.bg-dark
         .container
           .row
-            .col-sm-3
+            .col-sm-4
               // Widget start
               .widget
-                h5.widget-title.font-alt About Rival
+                h5.widget-title.font-alt Created By
+                ul.icon-list
+                  li
+                    | Benjie Genchel
+                    a(href='#') Eta Class Fall 2012
+                  li
+                    | Alex Yang
+                    a(href='#') Eta Class Fall 2012
+                  li
+                    | Michael Luo
+                    a(href='#') Iota Class Spring 2013
+              // Widget end
+            .col-sm-4
+              // Widget start
+              .widget
+                h5.widget-title.font-alt Neighboring Chapters
+                ul.icon-list
+                  li
+                    a(href='#') UC Berkeley
+                  li
+                    a(href='#') UC Irvine
+                  li
+                    a(href='#') UC Los Angeles
+                  li
+                    a(href='#') UC Riverside
+                  li
+                    a(href='#') UC Merced
+              // Widget end
+            .col-sm-4
+              // Widget start
+              .widget
+                h5.widget-title.font-alt About Theta Tau
                 p
-                  | The languages only differ in their grammar, their pronunciation and their most common words.
+                  | The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship.
                 p
-                  | Phone: +1 234 567 89 10
-                  br
-                  | Fax: +1 234 567 89 10
+                  | Phone: +1 415 595 5985
                 p
                   | Email: 
-                  a(href='#') somecompany@example.com
+                  a(href='#') ttsdwebmaster@gmail.com
               // Widget end
-            .col-sm-3
-              // Widget start
-              .widget
-                h5.widget-title.font-alt Recent Comments
-                ul.icon-list
-                  li
-                    | Maria on 
-                    a(href='#') Designer Desk Essentials
-                  li
-                    | John on 
-                    a(href='#') Realistic Business Card Mockup
-                  li
-                    | Andy on 
-                    a(href='#') Eco bag Mockup
-                  li
-                    | Jack on 
-                    a(href='#') Bottle Mockup
-                  li
-                    | Mark on 
-                    a(href='#') Our trip to the Alps
-              // Widget end
-            .col-sm-3
-              // Widget start
-              .widget
-                h5.widget-title.font-alt Categories
-                ul.icon-list
-                  li
-                    a(href='#') Photography - 7
-                  li
-                    a(href='#') Web Design - 3
-                  li
-                    a(href='#') Illustration - 12
-                  li
-                    a(href='#') Marketing - 1
-                  li
-                    a(href='#') WordPress - 16
-              // Widget end
-            .col-sm-3
-              // Widget start
-              .widget
-                h5.widget-title.font-alt Popular posts
-                ul.widget-posts
-                  li.clearfix
-                    .widget-posts-image
-                      a(href='#')
-                        img(src='images/rp-1.jpg', alt='')
-                    .widget-posts-body
-                      .widget-posts-title
-                        a(href='#') Designer Desk Essentials
-                      .widget-posts-meta
-                        | 23 November
-                  li.clearfix
-                    .widget-posts-image
-                      a(href='#')
-                        img(src='images/rp-2.jpg', alt='')
-                    .widget-posts-body
-                      .widget-posts-title
-                        a(href='#') Realistic Business Card Mockup
-                      .widget-posts-meta
-                        | 15 November
+            //-.col-sm-3
+              //-// Widget start
+              //-.widget
+                //-h5.widget-title.font-alt Popular posts
+                //-ul.widget-posts
+                  //-li.clearfix
+                    //-.widget-posts-image
+                      //-a(href='#')
+                        //-img(src='images/rp-1.jpg', alt='')
+                    //-.widget-posts-body
+                      //-.widget-posts-title
+                        //-a(href='#') Designer Desk Essentials
+                      //-.widget-posts-meta
+                        //-| 23 November
+                  //-li.clearfix
+                    //-.widget-posts-image
+                      //-a(href='#')
+                        //-img(src='images/rp-2.jpg', alt='')
+                    //-.widget-posts-body
+                      //-.widget-posts-title
+                        //-a(href='#') Realistic Business Card Mockup
+                      //-.widget-posts-meta
+                        //-| 15 November
               // Widget end
           // .row
       // Widgets end
@@ -814,7 +808,7 @@ html(lang='en')
             .col-sm-6
               p.copyright.font-alt
                 | © 2015 
-                a(href='index.html') Rival
+                a(href='/') UCSD Theta Tau 
                 | , All Rights Reserved.
             .col-sm-6
               .footer-social-links

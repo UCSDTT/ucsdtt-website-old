@@ -1,3 +1,4 @@
+var app = require('../app');
 var express = require('express');
 var nodemailer = require('nodemailer');
 var router = express.Router();
@@ -6,17 +7,19 @@ var router = express.Router();
 router.get('/', function(req, res) {
   var members = [];
 
-  for(var i = 0; i < 20; i++) {
-      members.push({ 
-          "id": i,
-          "firstName" : "Alex",
-          "lastName"  : "Yang"
-      });
-  }
+  app.knex('members')
+    .orderBy('id', 'asc')
+    // Server error maybe
+    .catch(function(error) {
+      console.error(error);
+    })
+    .then(function(rows) {
+      console.log(rows.length + ' member(s) returned');
 
-  res.render('index', { 
-        data: JSON.stringify(members)
-  });
+      res.render('index', { 
+            data: JSON.stringify(rows)
+      });
+    });
 });
 
 router.post('/contact', function(req, res){
