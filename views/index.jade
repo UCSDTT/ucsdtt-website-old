@@ -547,73 +547,31 @@ html(lang='en')
       // Testimonials start
       section.module.bg-dark-60.pt-0.pb-0(data-background='images/section-7.jpg')
         .testimonials-slider.pt-140.pb-140
+          h2.module-title.font-alt Relevant Tweets
           ul.slides
-            // Slide 1 start
-            li
-              .container
-                .row
-                  .col-sm-12
-                    .module-icon
-                      span.icon-quote
-                // .row
-                .row
-                  .col-sm-8.col-sm-offset-2
-                    blockquote.testimonial-text.font-alt
-                      | I love the smell of feet after a long, sweaty night's rest.
-                // .row
-                .row
-                  .col-sm-4.col-sm-offset-4
-                    .testimonial-author
-                      .testimonial-caption.font-alt
-                        .testimonial-title Michael "Footsie" Luo
-                        .testimonial-descr Feet Lovers' Club, CEO
-                // .row
-              // .container
-            // Slide 1 end
-            // Slide 2 start
-            li
-              .container
-                .row
-                  .col-sm-12
-                    .module-icon
-                      span.icon-quote
-                // .row
-                .row
-                  .col-sm-8.col-sm-offset-2
-                    blockquote.testimonial-text.font-alt
-                      | I f***ing love cats. 
-                // .row
-                .row
-                  .col-sm-4.col-sm-offset-4
-                    .testimonial-author
-                      .testimonial-caption.font-alt
-                        .testimonial-title Jamie "Meowzer" Yang
-                        .testimonial-descr Meowzer Advocates Inc., Marketing Representative
-                // .row
-              // .container
-            // Slide 2 end
-            // Slide 3 start
-            li
-              .container
-                .row
-                  .col-sm-12
-                    .module-icon
-                      span.icon-quote
-                // .row
-                .row
-                  .col-sm-8.col-sm-offset-2
-                    blockquote.testimonial-text.font-alt
-                      | This is so dope.
-                // .row
-                .row
-                  .col-sm-4.col-sm-offset-4j
-                    .testimonial-author
-                      .testimonial-caption.font-alt
-                        .testimonial-title Alex "Gainz" Yang
-                        .testimonial-descr 24 Hour Fitness, Bulking Coach
-                // .row
-              // .container
-            // Slide 3 end
+            each tweet, index in tweetData
+              // Slide loop start
+              li
+                .container
+                  .row
+                    .col-sm-12
+                      .module-icon
+                        span.icon-quote
+                  // .row
+                  .row
+                    .col-sm-8.col-sm-offset-2
+                      blockquote.testimonial-text.font-alt
+                        | #{tweet.text}
+                  // .row
+                  .row
+                    .col-sm-4.col-sm-offset-4
+                      .testimonial-author
+                        .testimonial-caption.font-alt
+                          .testimonial-title #{tweet.name}
+                          .testimonial-descr @#{tweet.screen_name}
+                  // .row
+                // .container
+              // Slide loop end
         // .testimonials-slider
       // Testimonials end
       // Latest blog posts start
