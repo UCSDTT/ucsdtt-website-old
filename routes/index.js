@@ -1,6 +1,7 @@
 var app = require('../app');
 var express = require('express');
 var nodemailer = require('nodemailer');
+var _ = require('underscore');
 var router = express.Router();
 var Twitter = require('twitter'),
     twitter = new Twitter({
@@ -9,21 +10,20 @@ var Twitter = require('twitter'),
         access_token_key: process.env.TWITTER_TOKEN_KEY,
         access_token_secret: process.env.TWITTER_TOKEN_SECRET
       });
-var keywords = 'from:elonmusk OR from:techcrunch OR from:neiltyson';
+
+var keywords = 'from:elonmusk OR from:neiltyson OR from:billgates OR from:techcrunch';
 
 router.get('/', function(req, res) {
   var members = [];
 
-  // Get twitter data
-  twitter.get('search/tweets', {q: keywords, count: 4, lang: 'en'}, function(error, data, response){
-  tweets = [];
- 
-  //twitter.get('statuses/home_timeline', {count: 6, exclude_replies: true, contributor_details: true, lang: 'en'}, function(error, data, response){
-    //console.log(data);
+
+  // Get twitter data (pick 4 out of 20 tweets randomly)
+  twitter.get('search/tweets', {q: keywords, count: 20, lang: 'en'}, function(error, data, response){
+    var tweets = [];
     var statuses = data.statuses;
-    for(var idx = 0; idx < data.length; ++idx) {
-      var tweet = statuses[idx];
-      console.log(tweet);
+    statuses = _.shuffle(statuses);
+    for(var idx = 0; idx < 4; ++idx) {
+      var status = statuses[idx];
       tweets.push({
         name: tweet.user.name,
         screen_name: tweet.user.screen_name,
