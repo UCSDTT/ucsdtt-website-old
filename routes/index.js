@@ -9,22 +9,26 @@ var Twitter = require('twitter'),
         access_token_key: process.env.TWITTER_TOKEN_KEY,
         access_token_secret: process.env.TWITTER_TOKEN_SECRET
       });
-var keywords = 'engineering OR virtualreality OR technology';
+var keywords = 'from:elonmusk OR from:techcrunch OR from:neiltyson';
 
 router.get('/', function(req, res) {
   var members = [];
 
   // Get twitter data
   twitter.get('search/tweets', {q: keywords, count: 4, lang: 'en'}, function(error, data, response){
-    var tweets = [];
+  tweets = [];
+ 
+  //twitter.get('statuses/home_timeline', {count: 6, exclude_replies: true, contributor_details: true, lang: 'en'}, function(error, data, response){
+    //console.log(data);
     var statuses = data.statuses;
-    for(var idx = 0; idx < statuses.length; ++idx) {
-      var status = statuses[idx];
+    for(var idx = 0; idx < data.length; ++idx) {
+      var tweet = statuses[idx];
+      console.log(tweet);
       tweets.push({
-        name: status.user.name,
-        screen_name: status.user.screen_name,
-        status_link: 'https://twitter.com/' + status.user.screen_name + '/status/' + status.id_str,
-        text: status.text
+        name: tweet.user.name,
+        screen_name: tweet.user.screen_name,
+        status_link: 'https://twitter.com/' + tweet.user.screen_name + '/status/' + tweet.id_str,
+        text: tweet.text
       });
     }
     // Get member data
@@ -42,7 +46,7 @@ router.get('/', function(req, res) {
               tweetData: tweets
         });
       });
-  });
+    });
 });
 
 router.get('/memberpage', function(req, res){
