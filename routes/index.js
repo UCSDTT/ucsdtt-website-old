@@ -23,7 +23,7 @@ router.get('/', function(req, res) {
     var statuses = data.statuses;
     statuses = _.shuffle(statuses);
     for(var idx = 0; idx < 4; ++idx) {
-      var status = statuses[idx];
+      var tweet = statuses[idx];
       tweets.push({
         name: tweet.user.name,
         screen_name: tweet.user.screen_name,
