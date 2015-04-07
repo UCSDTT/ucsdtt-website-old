@@ -566,12 +566,13 @@ html(lang='en')
                   .row
                     .col-sm-12
                       .module-icon
-                        span.icon-quote
+                        span.icon-twitter
                   // .row
                   .row
                     .col-sm-8.col-sm-offset-2
-                      blockquote.testimonial-text.font-alt
-                        | #{tweet.text}
+                      a(href="#{tweet.url}")
+                        blockquote.testimonial-text.font-alt.twitter_text
+                          | #{tweet.text}
                   // .row
                   .row
                     .col-sm-4.col-sm-offset-4

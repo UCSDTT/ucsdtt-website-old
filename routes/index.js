@@ -11,7 +11,7 @@ var Twitter = require('twitter'),
         access_token_secret: process.env.TWITTER_TOKEN_SECRET
       });
 
-var keywords = 'from:elonmusk OR from:neiltyson OR from:billgates OR from:techcrunch';
+var keywords = 'from:engineeringcom OR from:edncom OR from:eeportal_com OR from:elonmusk OR from:cenmag';
 
 router.get('/', function(req, res) {
   var members = [];
@@ -22,13 +22,17 @@ router.get('/', function(req, res) {
     var tweets = [];
     var statuses = data.statuses;
     statuses = _.shuffle(statuses);
-    for(var idx = 0; idx < 4; ++idx) {
+    for(var idx = 0; idx < 8; ++idx) {
       var tweet = statuses[idx];
+      var url = '';
+      if(tweet.entities.urls.length != 0)
+        url = tweet.entities.urls[0].url;
       tweets.push({
         name: tweet.user.name,
         screen_name: tweet.user.screen_name,
         status_link: 'https://twitter.com/' + tweet.user.screen_name + '/status/' + tweet.id_str,
-        text: tweet.text
+        text: tweet.text,
+        url: url
       });
     }
     // Get member data
