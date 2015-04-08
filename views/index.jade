@@ -323,7 +323,9 @@ html(lang='en')
                 .alt-features-icon
                   span.icon-presentation
                 h3.alt-features-title.font-alt Info Night
-                | 							Come out and learn about our fraternity and get a chance to meet the brothers of Theta Tau.
+                | 							Come out and learn about our fraternity and get a chance to meet the brothers of Theta Tau.<br><br>
+                | Monday April 6th @ 7:30pm
+                | Meet at the Triton Statue
               // Alt features item end
               // Alt features item start
               .alt-features-item
@@ -337,7 +339,9 @@ html(lang='en')
                 .alt-features-icon
                   span.icon-linegraph
                 h3.alt-features-title.font-alt Professional Night
-                | 							Get your resumes critiqued and learn quality, professional skills from brothers in the industry. Professional attire is recommended.
+                | 							Have resume critiqued and learn quality professional skills from brothers in the industry! Professional attire is recommended.<br><br>
+                | Wednesday April 8th @ 7:30pm<br>
+                | Meet at the Triton Statue
               // Alt features item end
               // Alt features item start
               .alt-features-item
@@ -365,7 +369,9 @@ html(lang='en')
                 .alt-features-icon
                   span.icon-chat
                 h3.alt-features-title.font-alt Meet N Greet
-                | 							Engineer seeking engineer? Come meet the brothers of Theta Tau speed dating style!
+                | 							Engineer seeking engineer? Come meet the brothers of Theta Tau speed dating style!<br><br>
+                | Tuesday April 6th @ 7:30pm<br>
+                | Meet at the Triton Statue
               // Alt features item end
               // Alt features item start
               .alt-features-item
@@ -379,7 +385,9 @@ html(lang='en')
                 .alt-features-icon
                   span.icon-anchor
                 h3.alt-features-title.font-alt Bondfire
-                | 							Enjoy dinner and make s'mores around a bonfire with the brothers at La Jolla Shores, shuttling begins 6:30pm from Peterson Loop.
+                | 							Enjoy dinner and make s'mores around a bonfire with the brothers at La Jolla Shores! Shuttling will be provided from Peterson Loop.<br><br>
+                | Thursday April 9th @ 6:30pm<br>
+                | Meet at Peterson Loop
               // Alt features item end
             // .col
           // .row
@@ -403,10 +411,10 @@ html(lang='en')
             for member in data
               // Team item star
               .col-xs-2.col-sm-2.col-md-1.mb-sm-20
-                a(title="Coming Soon")#portrait
+                a(title="#{member.firstname} #{member.lastname}")#portrait
                   .team-item
                     .team-image
-                      img(src='images/team-2.jpg', alt='')
+                      img(src='#{member.img_path}', alt='')
                       .team-detail
                         //-h5.font-alt Good day
                         //-p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.

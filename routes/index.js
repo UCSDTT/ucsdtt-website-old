@@ -36,8 +36,8 @@ router.get('/', function(req, res) {
       });
     }
     // Get member data
-    app.knex('members')
-      .orderBy('id', 'asc')
+    app.knex('members').whereNotNull('img_path')
+      .orderBy('epsidelt_num', 'asc')
       // Server error maybe
       .catch(function(error) {
         console.error(error);
