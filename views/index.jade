@@ -69,7 +69,7 @@ html(lang='en')
       </section >
     section#home.home-section.home-full-height.bg-dark-30(data-background='images/section-12.jpg')
       // Youtube player start
-      .video-player(data-property="{videoURL:'https://www.youtube.com/watch?v=MFZRJDWFhuY', containment:'.home-section', startAt:0, mute:true, autoPlay:true, loop:true, opacity:0.75, showControls:false, showYTLogo:false, vol:25}")
+      .video-player(data-property="{videoURL:'https://www.youtube.com/watch?v=MFZRJDWFhuY', containment:'.home-section', startAt:0, mute:true, autoPlay:true, loop:true, opacity:0.75, showControls:false, showYTLogo:false, vol:0}")
       // Youtube player end
       // Youtube controls start
       // .video-controls-box
@@ -411,7 +411,7 @@ html(lang='en')
             for member in data
               // Team item star
               .col-xs-2.col-sm-2.col-md-1.mb-sm-20
-                a(title="#{member.firstname} #{member.lastname}")#portrait
+                a(title="#{member.firstname} #{member.lastname}")
                   .team-item
                     .team-image
                       img(src='#{member.img_path}', alt='')
