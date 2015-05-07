@@ -33,9 +33,10 @@
 
 .pardivider{
   height: 400px;
+  background-color: black;
   overflow: hidden;
 }
 
 .pardivider img {
-  bottom: 0px;
+  opacity: 0.65
 }

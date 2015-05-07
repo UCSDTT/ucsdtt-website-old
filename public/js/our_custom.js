@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var s = skrollr.init(); // Initialize parallax
+  var s = skrollr.init({forceHeight: false}); // Initialize parallax
 
   $('#portrait').magnificPopup({
     type: 'ajax'
