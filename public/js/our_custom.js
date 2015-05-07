@@ -1,7 +1,10 @@
 $(document).ready(function(){
-	$('#portrait').magnificPopup({
-		type: 'ajax'
-	});
+
+  var s = skrollr.init(); // Initialize parallax
+
+  $('#portrait').magnificPopup({
+    type: 'ajax'
+  });
   $(".rush-flyer").hover(
     function() {
       $(this).find('img').attr("src", "images/thetatau_back.jpg");

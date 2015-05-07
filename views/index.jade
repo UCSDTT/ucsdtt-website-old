@@ -1,3 +1,8 @@
+mixin pardivider(picurl)
+  .pardivider
+    img(src=picurl class="img-responsive" 
+    data-bottom-top="transform:translateY(-40%)" data-top-bottom="transform:translateY(0%)")
+
 doctype html
 html(lang='en') 
   head
@@ -205,7 +210,7 @@ html(lang='en')
       //    .row
       // Video end
       hr.divider-w
-      section.module.bg-dark-60.pt-0.pb-0(style="height:400px;", data-background='images/jimmy_and_alex.jpg')
+      +pardivider("images/jimmy_and_alex.jpg")
       // Portfolio start
       section#works.module.pb-0
         .container
@@ -394,8 +399,7 @@ html(lang='en')
       // Rush end
       // Divider
       hr.divider-w
-      section.module.bg-dark-60.pt-0.pb-0(data-background='images/section-7.jpg')
-        section.module.bg-dark-60.pt-0.pb-0(style="height:400px;opacity:0.65;", data-background='images/kappas.jpg')
+      +pardivider("images/kappas.jpg")
       // Divider
       // Member Gallery start
       section#team.module
@@ -878,3 +882,4 @@ html(lang='en')
     script(src='js/contact.js')
     script(src='js/custom.js')
     script(src='js/our_custom.js')
+    script(src='js/skrollr.min.js')

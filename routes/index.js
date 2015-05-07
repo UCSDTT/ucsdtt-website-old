@@ -45,7 +45,7 @@ router.get('/', function(req, res) {
       .then(function(rows) {
         console.log(rows.length + ' member(s) returned');
         // Pass tweets and members to homepage
-        res.render('index', { 
+        res.render('index', {
               data: JSON.stringify(rows),
               tweetData: tweets
         });
@@ -76,7 +76,7 @@ router.post('/contact', function(req, res){
   transporter.sendMail(mailOpts, function(error, response){
     if (error) {
       console.log(error);
-      
+
       var result = {
         message: "Error sending E-mail.",
         sendstatus: 0
@@ -85,7 +85,7 @@ router.post('/contact', function(req, res){
       res.json(JSON.stringify(result));
     } else {
       console.log('email sent.');
-      
+
       var result = {
         message: "Thanks for contacting us!",
         sendstatus: 1
