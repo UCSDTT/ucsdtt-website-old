@@ -32,11 +32,28 @@
 }
 
 .pardivider{
-  height: 400px;
   background-color: black;
   overflow: hidden;
 }
 
 .pardivider img {
   opacity: 0.65
+}
+
+@media screen and (min-width: 0px) {
+    .pardivider {
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pardivider {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pardivider {
+          height: 400px;
+    }
 }
