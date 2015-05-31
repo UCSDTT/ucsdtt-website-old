@@ -19,15 +19,6 @@ html(lang='en')
     link(href='css/style.css', rel='stylesheet')
     link(href='css/our_custom.css', rel='stylesheet')
 
-    script
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-62716818-1', 'auto');
-      ga('send', 'pageview');
-
   body
     // Preloader
     .page-loader
@@ -736,13 +727,39 @@ html(lang='en')
                 .row
                   .col-sm-2
                   .col-sm-8
-                    p.center_text.
-                       Outside of the Epsilon Delta at UCSD, Theta Tau is the oldest 
-                       and largest professional engineering fraternity in the United States, 
-                       with chapters everywhere from coast to coast!
+                    p.center_text
+                      |Outside of the Epsilon Delta chapter at UCSD, Theta Tau is the oldest 
+                      |and largest professional engineering fraternity in the United States, 
+                      |with chapters everywhere from coast to coast!
                     p.center_text  
                       |For more information, visit Theta Tau's national site: &nbsp
                       a(href="thetatau.org", style="font-size:13px;") thetatau.org
+              // Widget end
+            .col-sm-4
+              // Widget start
+              .widget
+                h5.widget-title.font-alt.center_text Visit Our Neighboring Chapters
+                ul.icon-list.center_text
+                  li
+                    a(href='http://www.thetatauuci.com/') UC Irvine
+                  li
+                    a(href='http://theta-tau-chi-chapter.herokuapp.com/') University of Arizona
+                  li
+                    a(href='http://www.thetataubruins.org/') UC Los Angeles
+                  li
+                    a(href='http://www.engr.ucr.edu/~thetatau/') UC Riverside
+                  li
+                    a(href='http://renothetatau.org/') University of Nevada, Reno
+                  li
+                    a(href='http://www.calthetatau.com/') UC Berkeley
+                  li
+                    a(href='http://pacific.orgsync.com/org/thetatau/About') University of the Pacific
+                  li
+                    a(href='http://www.mdthetatau.org/') UC Merced
+                  li
+                    a(href='http://www.davisthetatau.com/') UC Davis
+                  li
+                    a(href='') Arizona State University
               // Widget end
             .col-sm-4
               // Widget start
@@ -763,10 +780,8 @@ html(lang='en')
                   li
                     .row
                       .col-sm-2
-                      .col-sm-4.center_text
+                      .col-sm-8.center_text
                         a() Ryan Soo
-                      .col-sm-4.center_text
-                        a() Renn Darawali
                   li.center_text.font-alt
                     | Website Created By
                   li
@@ -788,32 +803,6 @@ html(lang='en')
                             a() Jamie Yang
                           li
                             a() Kyle Zhu
-            .col-sm-4
-              // Widget start
-              .widget
-                h5.widget-title.font-alt.center_text Visit Our Neighboring Chapters
-                ul.icon-list.center_text
-                  li
-                    a(href='http://www.thetatauuci.com/') UC Irvine
-                  li
-                    a(href='http://www.thetataubruins.org/') UC Los Angeles
-                  li
-                    a(href='http://www.engr.ucr.edu/~thetatau/') UC Riverside
-                  li
-                    a(href='#') UC Berkeley
-                  li
-                    a(href='http://www.mdthetatau.org/') UC Merced
-                  li
-                    a(href='http://www.davisthetatau.com/') UC Davis
-              // Widget end
-                h5.widget-title.font-alt About Theta Tau
-                p
-                  | The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship.
-                p
-                  | Phone: +1 415 595 5985
-                p
-                  | Email: 
-                  a(href='#') ttsdwebmaster@gmail.com
               // Widget end
             //-.col-sm-3
               //-// Widget start
@@ -858,7 +847,7 @@ html(lang='en')
                 i.fa.fa-twitter.fa-3x
             |       
             .col-sm-2.col-xs-4.text-center
-              a(title="Coming Soon")
+              a(href='https://instagram.com/thetatau_ucsd/')
                 i.fa.fa-instagram.fa-3x
           // .row
       // Footer end
