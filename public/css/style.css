@@ -1073,7 +1073,7 @@ Team
 
 .team-image:after {
 	position: absolute;
-	background: transparent;
+	background: rgba(0, 0, 0, 0.45);
 	content: " ";
 	display: block;
 	height: 100%;
@@ -1130,7 +1130,7 @@ Team
 }
 
 .team-item:hover .team-image:after {
-	background: rgba(0, 0, 0, .6);
+	background: transparent;
 }
 
 .team-item:hover .team-detail {
