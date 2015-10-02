@@ -19,6 +19,7 @@
 			navbar      = $('.navbar-custom'),
 			navHeight   = navbar.height(),
 			worksgrid   = $('#works-grid'),
+			membergallery = $('#member-gallery'),
 			width       = Math.max($(window).width(), window.innerWidth),
 			mobileTest;
 
@@ -252,6 +253,35 @@
 
 			return false;
 		});
+
+		/* ---------------------------------------------- /*
+		 * 'Team' Gallery
+		/* ---------------------------------------------- */
+
+		membergallery.imagesLoaded(function() {
+			membergallery.isotope({
+				layoutMode: 'fitRows',
+				itemSelector: '.portrait'
+			});
+		});
+
+		$('#class-filters a').click(function() {
+			$('#filters .current').removeClass('current');
+			$(this).addClass('current');
+			var selector = $(this).attr('data-filter');
+
+			membergallery.isotope({
+				filter: selector,
+				animationOptions: {
+					duration: 1200,
+					easing: 'linear',
+					queue: false
+				}
+			});
+
+			return false;
+		});
+
 
 		/* ---------------------------------------------- /*
 		 * Blog masonry

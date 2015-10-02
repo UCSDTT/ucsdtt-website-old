@@ -400,18 +400,50 @@ html(lang='en')
       // Divider
       // Member Gallery start
       section#team.module
-        .container
+        .container#member-gallery-container
           .row
             .col-sm-6.col-sm-offset-3
               h2.module-title.font-alt Meet Our Brothers
               .module-subtitle.font-serif.center_text
                 | We forge lifelong bonds of fraternal friendship, a journey that develops and delivers a network of lasting personal and professional relationships.
-          // .row
           .row
+            .col-sm-12
+              ul#class-filters.filter.font-alt.hidden-xs
+                li
+                  a.current.wow.fadeInUp(href='#', data-filter='*', data-wow-delay='0.4s') All
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Charter', data-wow-delay='0.4s') Charter
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Alpha', data-wow-delay='0.4s') Alpha
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Beta', data-wow-delay='0.4s') Beta
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Gamma', data-wow-delay='0.4s') Gamma
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Delta', data-wow-delay='0.4s') Delta
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Epsilon', data-wow-delay='0.4s') Epsilon
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Zeta', data-wow-delay='0.4s') Zeta
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Eta', data-wow-delay='0.4s') Eta
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Theta', data-wow-delay='0.4s') Theta
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Iota', data-wow-delay='0.4s') Iota
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Kappa', data-wow-delay='0.4s') Kappa
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Lambda', data-wow-delay='0.4s') Lambda
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.Mu', data-wow-delay='0.4s') Mu
+
+          // .row
+          ul#member-gallery
             - data = JSON.parse(data);
             for member in data
               // Team item star
-              .col-xs-2.col-sm-2.col-md-1.mb-sm-20
+              li.portrait.col-xs-2.col-sm-2.col-md-1.mb-sm-20(class="#{member.class}")
                 a(title="#{member.firstname} #{member.lastname}")
                   .team-item
                     .team-image
