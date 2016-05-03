@@ -25,9 +25,11 @@ html(lang='en')
     link(href='css/our_custom.css', rel='stylesheet')
 
   body
+  
     // Preloader
     .page-loader
       .loader Loading...
+  
     // Navigation start
     nav.navbar.navbar-custom.navbar-transparent.navbar-fixed-top.one-page(role='navigation')
       .container.top_bar
@@ -51,13 +53,8 @@ html(lang='en')
               a.section-scroll(href='#rush') Rush
             li
               a.section-scroll(href='#team') Members
-            //-li
-              //-a.section-scroll(href='#pricing') Current Engineering
-            //-li
-              //-a.section-scroll(href='#news') News
             li
               a.section-scroll(href='#contact') Contact
-    // Navigation end
 
     section#home.home-section.home-full-height.bg-dark-30(data-background='images/section-12.jpg')
       
@@ -104,12 +101,9 @@ html(lang='en')
               .large-text.align-center
                 a.section-scroll(href='#features')
                   i.fa.fa-angle-down
-        // .container
-      // About end
-      // Divider
+
       hr.divider-w
       
-      // 3 Pillars Start
       section#features.module
         .container
           .row
@@ -117,8 +111,6 @@ html(lang='en')
               h2.module-title.font-alt Three Pillars
               .module-subtitle.font-serif(style="text-align:center;")
                 | We, as brothers of Theta Tau, strive to embody the three pillars of our fraternity.
-          //.row.multi-columns-row
-          // Brotherhood Start
           .row
             .col-sm-1.co-md-1.col-lg-1
             .col-sm-4.col-md-4.col-lg-4
@@ -149,10 +141,6 @@ html(lang='en')
                 h3.features-title.font-alt Philanthropy
                 | 							For the purpose of our members’ personal growth, as well as our community’s benefits, we are involved in projects that give back to the community around us. Serving alongside brothers will establish strong bonds and also guarantee a truly meaningful time through one’s college years.
             .col-sm-4.col-md-4.col-lg-4
-            //Philanthropy end
-          // .row
-        // .container
-        //Three PIllars end
       
       hr.divider-w
       +pardivider("images/jimmy_and_alex.jpg")
@@ -311,8 +299,7 @@ html(lang='en')
                   span.icon-
                 h3.alt-features-title.font-alt  
                 | 							 <br><br><br><br>
-              // Alt features item end
-              // Alt features item start
+
               .alt-features-item
                 .alt-features-icon
                   span.icon-anchor
@@ -320,10 +307,7 @@ html(lang='en')
                 | 							Enjoy dinner and make s'mores around a bonfire with the brothers at La Jolla Shores! Shuttling will be provided from Peterson Loop.<br><br>
                 | Thursday October 9th @ 6:30pm<br>
                 | Meet at Peterson Loop
-              // Alt features item end
-            // .col
-          // .row
-      // Rush end
+
       // Divider
       hr.divider-w
       +pardivider("images/kappas.jpg")
@@ -366,20 +350,13 @@ html(lang='en')
                         .testimonial-caption.font-alt
                           .testimonial-title #{tweet.name}
                           .testimonial-descr @#{tweet.screen_name}
-                  // .row
-                // .container
-              // Slide loop end
-        // .testimonials-slider
-      // Testimonials end
-      // Latest blog posts start
-      //-section#news.module
+
         .container
           .row
             .col-sm-6.col-sm-offset-3
               h2.module-title.font-alt Calendar soon to be...
               .module-subtitle.font-serif
                 | I love calendars. Calendars love me.
-          // .row
           .row.multi-columns-row.post-columns
             // Post item start
             .col-sm-6.col-md-4.col-lg-4
@@ -556,13 +533,9 @@ html(lang='en')
                             a() Jamie Yang
                           li
                             a() Kyle Zhu
-              // Widget end
-            
-          // .row
-      // Widgets end
-      // Divider
+
       hr.divider-d
-      // Divider
+      
       // Footer start
       footer.footer.bg-dark
         .container
@@ -579,9 +552,8 @@ html(lang='en')
             .col-sm-2.col-xs-4.text-center
               a(href='https://instagram.com/thetatau_ucsd/')
                 i.fa.fa-instagram.fa-3x
-          // .row
-      // Footer end
-    // Wrapper start
+                
+
     // Scroll-up
     .scroll-up
       a(href='#totop')
