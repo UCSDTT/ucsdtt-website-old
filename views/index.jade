@@ -58,33 +58,11 @@ html(lang='en')
             li
               a.section-scroll(href='#contact') Contact
     // Navigation end
-    // Home start
-    //
-      <section id="home" class="home-section home-parallax home-fade home-full-height bg-dark-30" data-background="images/section-2.jpg">
-      <div class="hs-caption">
-      <div class="caption-content">
-      <div class="hs-title-size-1 font-alt mb-30">
-      Hello & Welcome
-      </div>
-      <div class="hs-title-size-4 font-alt mb-40">
-      Theta Tau @ UCSD
-      </div>
-      <a href="#" class="btn btn-border-w btn-round">Learn More</a>
-      </div>
-      </div>
-      </section >
+
     section#home.home-section.home-full-height.bg-dark-30(data-background='images/section-12.jpg')
-      // Youtube player start
+      
       .video-player(data-property="{videoURL:'https://www.youtube.com/watch?v=MFZRJDWFhuY', containment:'.home-section', startAt:0, mute:true, autoPlay:true, loop:true, opacity:0.75, showControls:false, showYTLogo:false, vol:0}")
-      // Youtube player end
-      // Youtube controls start
-      // .video-controls-box
-      //   .container
-      //     .video-controls
-      //       span background provided by FLYT Media
-      //       // a#video-volume.fa.fa-volume-up(href='#')  
-      //       // a#video-play.fa.fa-pause(href='#')  
-      // // Youtube controls end
+
       .hs-caption
         .caption-content
           .hs-title-size-1.font-alt.mb-30
@@ -109,16 +87,7 @@ html(lang='en')
                 | On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
             .col-md-5
               img.height-about(src='images/EpsilonDelta.jpg', alt='')
-            // .col-sm-3.col-sm-offset-0
-            //   img.height-about(src='images/post-masonry-1.jpg', alt='')
-            // .col-sm-8.col-sm-offset-0
-            //   h2.module-title.font-alt About UCSD Theta Tau
-            //   .module-subtitle
-            //     | In the Spring of 2009, several students of UCSD's Jacobs School of Engineering felt that there was a lack of engineering representation in the Greek community on campus. Luckily an opportunity arose for them to change that. 
-            //     p 
-            //     | With the help of a Theta Tau alumni, Jennifer Young, thirteen founding fathers took the first step towards establishing a chapter of the nation's oldest and largest professional engineering fraternity on the UCSD campus: Ashay Verma, Errynne Bell, Takahiro Kuwayama, Amelia Chu, Xiumei Wu, Chris Lam, Chuong Do, Joe Shao, Michelle Mojica, Tanakorn Best Techajongchareon, Scott Louie, Alan Leung, and John Phu Nguyen. 
-            //     p
-            //     | On November 20th, 2010, UCSD was installed as the Epsilon Delta Chapter of Theta Tau.
+
           .row
             .col-md-7.col-md-push-5
               h2.module-title.font-alt Theta Tau Origins
@@ -128,16 +97,6 @@ html(lang='en')
                 | The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship. The goals of the fraternity are to promote the social and professional development of its members during and after their college years. 
             .col-md-5.col-md-pull-7
               img.originImg(src='images/Origins.jpg', alt='')
-            // .col-sm-8.col-sm-offset-0
-            //   h2.module-title.font-alt Theta Tau Origins
-            //   .module-subtitle
-            //     | Theta Tau was originally founded as the "Society of Hammer and Tongs," on October 15, 1904 by Erich J. Schrader, Elwin L. Vinal, William M. Lewis, and Isaac B. Hanks at the University of Minnesota. The name was changed to Theta Tau at the fraternity's first national convention at the University of Minnesota in 1911. Since then, approximately 30,000 members have been initiated.
-            //     p
-            //     | The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship. The goals of the fraternity are to promote the social and professional development of its members during and after their college years. 
-              
-            // .col-sm-3.col-sm-offset-0
-            //   img.height-about(src='images/post-masonry-2.jpg', alt='')
-            
 
           // .row
           .row
@@ -149,7 +108,7 @@ html(lang='en')
       // About end
       // Divider
       hr.divider-w
-      // Divider
+      
       // 3 Pillars Start
       section#features.module
         .container
@@ -195,21 +154,6 @@ html(lang='en')
         // .container
         //Three PIllars end
       
-      // Video start
-      // section.module.bg-dark-60(data-background='images/section-6.jpg')
-      //   .container
-      //     .row
-      //       .col-sm-12
-      //         .video-box
-      //           .video-box-icon
-      //             a.video-pop-up(href='http://vimeo.com/15486292')
-      //               span.icon-video
-      //           .video-title.font-alt
-      //             | Presentation
-      //           .video-subtitle.font-alt
-      //             | Watch the video about our new products
-      //    .row
-      // Video end
       hr.divider-w
       +pardivider("images/jimmy_and_alex.jpg")
       // Portfolio start
@@ -395,18 +339,6 @@ html(lang='en')
               
               h3.module-subtitle.font-alt.center_text Current Active Members 
           
-          //- MEMBERS 
-          .row
-            //- - data = JSON.parse(data);
-            //- for member in data
-            //-   // Team item star
-            //-   .col-xs-2.col-sm-2.col-md-1.mb-sm-20
-            //-     a(title="#{member.firstname} #{member.lastname}")
-            //-       .team-item
-            //-         .team-image
-            //-           img(src='#{member.img_path}', alt='')
-            //-           .team-detail
-            //-         .team-descr.font-alt
 
       // Testimonials start
       section.module.bg-dark-60.pt-0.pb-0(data-background='images/section-7.jpg')
@@ -507,26 +439,7 @@ html(lang='en')
                   a.more-link(href='blog-single-right.html') Read more
             // Post item end
           // .row
-      //- // Latest blog posts end
-      //- // Subscribe start
-      //- // section.module-small.bg-dark
-      //-    .container
-      //-      .row
-      //-        .col-sm-6.col-md-6.col-lg-4.col-lg-offset-2
-      //-          .callout-text.font-alt
-      //-            h3.callout-title Subscribe now
-      //-            | 							We will not spam your email.
-      //-        .col-sm-6.col-md-6.col-lg-4
-      //-          .callout-btn-box
-      //-            form#subscription-form(role='form')
-      //-              .input-group
-      //-                input#semail.form-control(type='email', name='semail', placeholder='Your Email', required='', data-validation-required-message='Please enter your email address.')
-      //-                span.input-group-btn
-      //-                  button.btn.btn-g.btn-round(type='submit') Submit
-      //-            // Ajax response
-      //-            #subscription-response.ajax-response
-      //-     // .row
-      //- // Subscribe end
+
       // Contact start
       hr.divider-w
       section#contact.module
@@ -555,12 +468,7 @@ html(lang='en')
               #contact-response.ajax-response.font-alt
           // .row
       // Contact end
-      // Map start
-      //
-        <section id="map-section">
-        <div id="map"></div>
-        </section>
-      // Map end
+
       // Widgets start
       .module-small.bg-dark
         .container
