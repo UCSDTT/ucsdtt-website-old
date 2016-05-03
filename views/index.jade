@@ -293,32 +293,14 @@ html(lang='en')
                 h3.work-title Iota Class Initiation Ceremony, 2013
                 .work-descr
                   | Welcoming A New Generation of Brothers
-          // Portfolio item end
-        // Portfolio list end
-      // Portfolio end
-      
-      // Portfolio list end
-      // Public Events/Outreach end
-      // Callout start
-      // section.module-small.bg-dark
-      //   .container
-      //     .row
-      //       .col-sm-6.col-md-8.col-lg-6.col-lg-offset-2
-      //         .callout-text.font-alt
-      //           h3.callout-title Want to see more works?
-      //           | 							We are always open to interesting projects.
-      //       .col-sm-6.col-md-4.col-lg-2
-      //         .callout-btn-box
-      //           a.btn.btn-w.btn-round(href='portfolio-wide-gutter-col3.html') Lets view portfolio
-          // .row
-      // Callout end
+
       // Rush start
       hr.divider-w
       section#rush.module
         .container
           .row
             .col-sm-6.col-sm-offset-3
-              h2.module-title.font-alt Rush: Spring 2015
+              h2.module-title.font-alt Rush: Fall 2015
               .module-subtitle.font-serif.center_text
                 | Rush is a week long series of events held to allow potential new members to meet actives and get to know more about our fraternity.
           // .row
@@ -330,7 +312,7 @@ html(lang='en')
                   span.icon-presentation
                 h3.alt-features-title.font-alt Info Night
                 | 							Come out and learn about our fraternity and get a chance to meet the brothers of Theta Tau.<br><br>
-                | Monday April 6th @ 7:30pm
+                | Monday October 5th @ 7:30pm
                 | Meet at the Triton Statue
               // Alt features item end
               // Alt features item start
@@ -346,7 +328,7 @@ html(lang='en')
                   span.icon-linegraph
                 h3.alt-features-title.font-alt Professional Night
                 | 							Have resume critiqued and learn quality professional skills from brothers in the industry! Professional attire is recommended.<br><br>
-                | Wednesday April 8th @ 7:30pm<br>
+                | Wednesday October 8th @ 7:30pm<br>
                 | Meet at the Triton Statue
               // Alt features item end
               // Alt features item start
@@ -376,7 +358,7 @@ html(lang='en')
                   span.icon-chat
                 h3.alt-features-title.font-alt Meet N Greet
                 | 							Engineer seeking engineer? Come meet the brothers of Theta Tau speed dating style!<br><br>
-                | Tuesday April 6th @ 7:30pm<br>
+                | Tuesday October 6th @ 7:30pm<br>
                 | Meet at the Triton Statue
               // Alt features item end
               // Alt features item start
@@ -392,7 +374,7 @@ html(lang='en')
                   span.icon-anchor
                 h3.alt-features-title.font-alt Bondfire
                 | 							Enjoy dinner and make s'mores around a bonfire with the brothers at La Jolla Shores! Shuttling will be provided from Peterson Loop.<br><br>
-                | Thursday April 9th @ 6:30pm<br>
+                | Thursday October 9th @ 6:30pm<br>
                 | Meet at Peterson Loop
               // Alt features item end
             // .col
@@ -410,163 +392,22 @@ html(lang='en')
               h2.module-title.font-alt Meet Our Brothers
               .module-subtitle.font-serif.center_text
                 | We forge lifelong bonds of fraternal friendship, a journey that develops and delivers a network of lasting personal and professional relationships.
-          // .row
+              
+              h3.module-subtitle.font-alt.center_text Current Active Members 
+          
+          //- MEMBERS 
           .row
-            - data = JSON.parse(data);
-            for member in data
-              // Team item star
-              .col-xs-2.col-sm-2.col-md-1.mb-sm-20
-                a(title="#{member.firstname} #{member.lastname}")
-                  .team-item
-                    .team-image
-                      img(src='#{member.img_path}', alt='')
-                      .team-detail
-                        //-h5.font-alt Good day
-                        //-p.font-serif Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.
-                        //-.team-social
-                          //-a(href='#')
-                            //-i.fa.fa-facebook
-                          //-a(href='#')
-                            //-i.fa.fa-twitter
-                          //-a(href='#')
-                            //-i.fa.fa-dribbble
-                          //-a(href='#')
-                            //-i.fa.fa-skype
-                    .team-descr.font-alt
-                      //-.team-name #{member.id}
-                      //-.team-role Creative director
-                // Team item end
-      // Member Gallery end end
-      // Count to start
-      //-section.module.bg-dark-60(data-background='images/section-1.jpg')
-        //-.container
-          //-.row
-            //-.col-sm-6.col-sm-offset-3
-              //-h2.module-title.font-alt Scoreboard
-          //-// .row
-          //-.row.multi-columns-row
-            //-// CountTo start
-            //-.col-sm-6.col-md-3.col-lg-3
-              //-.count-item.mb-sm-40
-                //-.count-icon
-                  //-span.icon-wallet
-                //-h3.count-to.font-alt(data-countto='6543')
-                //-h5.count-title.font-serif Dollars raised for charity
-            //-// CountTo end
-            //-// CountTo start
-            //-.col-sm-6.col-md-3.col-lg-3
-              //-.count-item.mb-sm-40
-                //-.count-icon
-                  //-span.icon-wine
-                //-h3.count-to.font-alt(data-countto='8')
-                //-h5.count-title.font-serif Cups of wine consumed
-            //-// CountTo end
-            //-// CountTo start
-            //-.col-sm-6.col-md-3.col-lg-3
-              //-.count-item.mb-sm-40
-                //-.count-icon
-                  //-span.icon-camera
-                //-h3.count-to.font-alt(data-countto='184')
-                //-h5.count-title.font-serif Photographs taken
-            //-// CountTo end
-            //-// CountTo start
-            //-.col-sm-6.col-md-3.col-lg-3
-              //-.count-item.mb-sm-40
-                //-.count-icon
-                  //-span.icon-map-pin
-                //-h3.count-to.font-alt(data-countto='32')
-                //-h5.count-title.font-serif Locations covered
-            // CountTo end
-          // .row
-      // Count to end
-      // Pricing start
-      // section#pricing.module
-      //   .container
-      //     .row
-      //       .col-sm-6.col-sm-offset-3
-      //         h2.module-title.font-alt Pricing
-      //         .module-subtitle.font-serif
-      //           | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
-      //     // .row
-      //     .row.multi-columns-row
-      //       // Price table start
-      //       .col-sm-6.col-md-3.col-lg-3
-      //         .price-table.font-alt
-      //           h4 Light
-      //           .borderline
-      //           p.price
-      //             span $
-      //             | 9
-      //           ul.price-details
-      //             li Free Support
-      //             li 15 Demos Included
-      //             li
-      //               span Newsletter
-      //             li
-      //               span Working Contact Form
-      //             li
-      //               span Unlimited Domains
-      //           a.btn.btn-d.btn-round(href='#') Sign Up
-      //       // Price table end
-      //       // Price table start
-      //       .col-sm-6.col-md-3.col-lg-3
-      //         .price-table.font-alt
-      //           h4 Basic
-      //           .borderline
-      //           p.price
-      //             span $
-      //             | 29
-      //           ul.price-details
-      //             li Free Support
-      //             li 15 Demos Included
-      //             li Newsletter
-      //             li
-      //               span Working Contact Form
-      //             li
-      //               span Unlimited Domains
-      //           a.btn.btn-d.btn-round(href='#') Sign Up
-      //       // Price table end
-      //       // Price table start
-      //       .col-sm-6.col-md-3.col-lg-3
-      //         .price-table.best.font-alt
-      //           h4 Advanced
-      //           p.small Best Choice
-      //           .borderline
-      //           p.price
-      //             span $
-      //             | 64
-      //           ul.price-details
-      //             li Free Support
-      //             li 20 Demos Included
-      //             li Newsletter
-      //             li Working Contact Form
-      //             li
-      //               span Unlimited Domains
-      //           a.btn.btn-d.btn-round(href='#') Sign Up
-      //       // Price table end
-      //       // Price table start
-      //       .col-sm-6.col-md-3.col-lg-3
-      //         .price-table.font-alt
-      //           h4 Ultimate
-      //           .borderline
-      //           p.price
-      //             span $
-      //             | 119
-      //           ul.price-details
-      //             li Free Support
-      //             li 15 Demos Included
-      //             li Newsletter
-      //             li Working Contact Form
-      //             li Unlimited Domains
-      //           a.btn.btn-d.btn-round(href='#') Sign Up
-      //       // Price table end
-      //     // .row
-      //     .row.mt-40
-      //       .col-sm-6.col-sm-offset-3.align-center
-      //         p
-      //           | Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
-      //     // .row
-      // Pricing end
+            //- - data = JSON.parse(data);
+            //- for member in data
+            //-   // Team item star
+            //-   .col-xs-2.col-sm-2.col-md-1.mb-sm-20
+            //-     a(title="#{member.firstname} #{member.lastname}")
+            //-       .team-item
+            //-         .team-image
+            //-           img(src='#{member.img_path}', alt='')
+            //-           .team-detail
+            //-         .team-descr.font-alt
+
       // Testimonials start
       section.module.bg-dark-60.pt-0.pb-0(data-background='images/section-7.jpg')
         .testimonials-slider.pt-140.pb-140
@@ -808,30 +649,7 @@ html(lang='en')
                           li
                             a() Kyle Zhu
               // Widget end
-            //-.col-sm-3
-              //-// Widget start
-              //-.widget
-                //-h5.widget-title.font-alt Popular posts
-                //-ul.widget-posts
-                  //-li.clearfix
-                    //-.widget-posts-image
-                      //-a(href='#')
-                        //-img(src='images/rp-1.jpg', alt='')
-                    //-.widget-posts-body
-                      //-.widget-posts-title
-                        //-a(href='#') Designer Desk Essentials
-                      //-.widget-posts-meta
-                        //-| 23 November
-                  //-li.clearfix
-                    //-.widget-posts-image
-                      //-a(href='#')
-                        //-img(src='images/rp-2.jpg', alt='')
-                    //-.widget-posts-body
-                      //-.widget-posts-title
-                        //-a(href='#') Realistic Business Card Mockup
-                      //-.widget-posts-meta
-                        //-| 15 November
-              // Widget end
+            
           // .row
       // Widgets end
       // Divider
@@ -867,7 +685,6 @@ html(lang='en')
     script(src='js/appear.js')
     script(src='js/jquery.simple-text-rotator.min.js')
     script(src='js/jqBootstrapValidation.js')
-    //
       <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
       <script src="js/gmaps.js"></script>
     script(src='js/isotope.pkgd.min.js')
