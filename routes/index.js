@@ -22,6 +22,7 @@ router.get('/', function(req, res) {
     var tweets = [];
     var statuses = data.statuses;
     statuses = _.shuffle(statuses);
+
     for(var idx = 0; idx < 8; ++idx) {
       var tweet = statuses[idx];
       var url = '';
@@ -35,21 +36,27 @@ router.get('/', function(req, res) {
         url: url
       });
     }
-    // Get member data
-    app.knex('members').whereNotNull('img_path')
-      .orderBy('epsidelt_num', 'asc')
-      // Server error maybe
-      .catch(function(error) {
-        console.error(error);
-      })
-      .then(function(rows) {
-        console.log(rows.length + ' member(s) returned');
-        // Pass tweets and members to homepage
-        res.render('index', { 
-              data: JSON.stringify(rows),
-              tweetData: tweets
-        });
-      });
+    // // Get member data
+    // app.knex('members').where({active_status: 'Active'})
+    //   .orderBy('epsidelt_num', 'asc')
+    //   // Server error maybe
+    //   .catch(function(error) {
+    //     console.error(error);
+    //   })
+    //   .then(function(rows) {
+    //     console.log(rows.length + ' member(s) returned');
+    //     // Pass tweets and members to homepage
+    //     res.render('index', {
+    //           data: JSON.stringify(rows),
+    //           tweetData: tweets
+    //     });
+    //   });
+
+    res.render('index', {
+      data: [],
+      tweetData: tweets
+    });
+
     });
 });
 
@@ -76,7 +83,7 @@ router.post('/contact', function(req, res){
   transporter.sendMail(mailOpts, function(error, response){
     if (error) {
       console.log(error);
-      
+
       var result = {
         message: "Error sending E-mail.",
         sendstatus: 0
@@ -85,7 +92,7 @@ router.post('/contact', function(req, res){
       res.json(JSON.stringify(result));
     } else {
       console.log('email sent.');
-      
+
       var result = {
         message: "Thanks for contacting us!",
         sendstatus: 1

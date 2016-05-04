@@ -6,13 +6,12 @@ var dotenv = require('dotenv');
 var port = process.env.PORT || 2014;
 var nodemailer = require('nodemailer');
 
+console.log("Loading dot env");
 dotenv.load();
+console.log("Finished loading dot env");
+
 var pg = require('pg');
 var conString = process.env.DB_CREDENTIALS;
-var knex = exports.knex = require('knex')({
-  client: 'pg',
-  connection: conString
-});
 
 var nodemailer = require('nodemailer');
 var routes = require('./routes/index');
