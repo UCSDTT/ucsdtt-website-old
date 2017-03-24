@@ -1,6 +1,255 @@
-doctype html
-html(lang='en')
-	head
+mixin pardivider(picurl)
+  .pardivider
+    img(src=picurl class="img-responsive" 
+    data-bottom-top="transform:translateY(0%)" data-top-bottom="transform:translateY(-40%)")
 
-	body
-		h1 Some Text
+doctype html
+html(lang='en') 
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Theta Tau @ UCSD
+    // CSS
+    link(rel='shortcut icon' type='image/png' href='/images/tt_logo.png')
+    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/simpletextrotator.css', rel='stylesheet')
+    link(href='css/font-awesome.min.css', rel='stylesheet')
+    link(href='css/et-line-font.css', rel='stylesheet')
+    link(href='css/magnific-popup.css', rel='stylesheet')
+    link(href='css/flexslider.css', rel='stylesheet')
+    link(href='css/owl.carousel.css', rel='stylesheet')
+    link(href='css/animate.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/our_custom.css', rel='stylesheet')
+
+  body#skrollr-body
+    // Navigation start
+    nav.navbar.navbar-custom.navbar-black.navbar-fixed-top.one-page(role='navigation')
+      .container.top_bar
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#custom-collapse').mobile_menu_button
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/')
+            img(src="images/tt_logo.png").header_img
+        #custom-collapse.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right.menu_items
+            li
+              a(href='/') Home
+    // Home end
+      
+    // Wrapper start
+    .main
+      // Portfolio start
+      section#module.pb-0.pt-70
+        .container
+          .row
+            .col-sm-6.col-sm-offset-3
+              h2.module-title.font-alt Meet Our Brothers
+          // .row
+          .row
+            .col-sm-12
+              ul#filters.filter.font-alt.hidden-xs
+                li
+                  a.current.wow.fadeInUp(href='#', data-filter='*') All
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.brotherhood', data-wow-delay='0.2s') Active Members
+                li
+                  a.wow.fadeInUp(href='#', data-filter='.professional', data-wow-delay='0.4s') Alumni
+          // .row
+        // .container
+        // Portfolio list start
+        .row
+          .col-sm-10.col-sm-offset-1
+            ul#works-grid.works-grid.works-grid-gut.works-grid.works-grid-5.works-hover-w
+              // Portfolio item start
+              li.work-item.brotherhood
+                a()
+                  .image
+                    img(src='images/tempMem.jpg', alt='')
+                .portrait-head.font-alt.center_text Conway Hsieh
+                .portrait-sub.font-alt.center_text Bioengineering | Kappa Class | 2017
+              // Portfolio item end
+              // Portfolio item start
+              li.work-item.professional
+                a()
+                  .image
+                    img(src='images/tempMem.jpg', alt='')
+                .portrait-head.font-alt.center_text Conway Hsieh
+                .portrait-sub.font-alt.center_text Bioengineering | Kappa Class | 2017
+              // Portfolio item end
+              // Portfolio item start
+              li.work-item.brotherhood
+                a()
+                  .image
+                    img(src='images/tempMem.jpg', alt='')
+                .portrait-head.font-alt.center_text Conway Hsieh
+                .portrait-sub.font-alt.center_text Bioengineering | Kappa Class | 2017
+              // Portfolio item end
+              // Portfolio item start
+              li.work-item.brotherhood
+                a()
+                  .image
+                    img(src='images/tempMem.jpg', alt='')
+                .portrait-head.font-alt.center_text Conway Hsieh
+                .portrait-sub.font-alt.center_text Bioengineering | Kappa Class | 2017
+              // Portfolio item end
+              // Portfolio item start
+              li.work-item.brotherhood
+                a()
+                  .image
+                    img(src='images/tempMem.jpg', alt='')
+                .portrait-head.font-alt.center_text Conway Hsieh
+                .portrait-sub.font-alt.center_text Bioengineering | Kappa Class | 2017
+              // Portfolio item end
+              // Portfolio item start
+              li.work-item.brotherhood
+                a()
+                  .image
+                    img(src='images/tempMem.jpg', alt='')
+                .portrait-head.font-alt.center_text Conway Hsieh
+                .portrait-sub.font-alt.center_text Bioengineering | Kappa Class | 2017
+              // Portfolio item end
+
+
+        
+
+    // Widgets start
+    .module-small.bg-dark
+      .container
+        .row
+          .col-sm-4
+            // Widget start
+            .widget
+              h5.widget-title.font-alt.center_text Want to Learn More?
+              .row
+                .col-sm-2
+                .col-sm-8
+                  p.center_text
+                    |Outside of the Epsilon Delta chapter at UCSD, Theta Tau is the oldest 
+                    |and largest professional engineering fraternity in the United States, 
+                    |with chapters everywhere from coast to coast!
+                  p.center_text  
+                    |For more information, visit Theta Tau's national site: &nbsp
+                    a(href="http://thetatau.org/", style="font-size:13px;") thetatau.org
+            // Widget end
+          .col-sm-4
+            // Widget start
+            .widget
+              h5.widget-title.font-alt.center_text Visit Our Neighboring Chapters
+              ul.icon-list.center_text
+                li
+                  a(href='http://www.thetatauuci.com/') UC Irvine
+                li
+                  a(href='http://theta-tau-chi-chapter.herokuapp.com/') University of Arizona
+                li
+                  a(href='http://www.thetataubruins.org/') UC Los Angeles
+                li
+                  a(href='http://www.engr.ucr.edu/~thetatau/') UC Riverside
+                li
+                  a(href='http://renothetatau.org/') University of Nevada, Reno
+                li
+                  a(href='http://www.calthetatau.com/') UC Berkeley
+                li
+                  a(href='http://pacific.orgsync.com/org/thetatau/About') University of the Pacific
+                li
+                  a(href='http://www.mdthetatau.org/') UC Merced
+                li
+                  a(href='http://www.davisthetatau.com/') UC Davis
+                li
+                  a(href='http://www.thetatau-dg.org/') Arizona State University
+            // Widget end
+          .col-sm-4
+            // Widget start
+            .widget
+              h5.widget-title.font-alt.center_text Credits
+              ul.icon-list
+                li.center_text.font-alt
+                  | Home Page Video
+                li
+                  .row
+                    .col-sm-2
+                    .col-sm-4.center_text
+                      a() FLYT Media 
+                    .col-sm-4.center_text
+                      a(href="flytmedia.com") www.flytmedia.com
+                li.center_text.font-alt
+                  | Icon Design
+                li
+                  .row
+                    .col-sm-2
+                    .col-sm-8.center_text
+                      a() Ryan Soo
+                li.center_text.font-alt
+                  | Website Created By
+                li
+                  .row
+                    .col-sm-2
+                    .col-sm-4.center_text
+                      ul
+                        li
+                          a() Alex Yang
+                        li
+                          a(href='https://github.com/bchann/') Brian Chan
+                        li
+                          a() Michael Luo
+                        li
+                          a() Jesse Zhou
+                    .col-sm-4.center_text
+                      ul
+                        li
+                          a() Benjie Genchel
+                        li
+                          a() Daniel Kang
+                        li
+                          a() Jamie Yang
+                        li
+                          a() Kyle Zhu
+
+    hr.divider-d
+    
+    // Footer start
+    footer.footer.bg-dark
+      .container
+        .row
+          //fontawesome icons
+          .col-sm-2.col-sm-offset-3.col-xs-4.text-center
+            a(href='https://www.facebook.com/pages/Theta-Tau-UCSD/346680895436731?fref=ts')
+              i.fa.fa-facebook.fa-3x
+          |       
+          .col-sm-2.col-xs-4.text-center
+            a(title="Coming Soon")
+              i.fa.fa-twitter.fa-3x
+          |       
+          .col-sm-2.col-xs-4.text-center
+            a(href='https://instagram.com/thetatau_ucsd/')
+              i.fa.fa-instagram.fa-3x
+    // Scroll-up
+    .scroll-up
+      a(href='#totop')
+        i.fa.fa-angle-double-up
+    // Javascript files
+    script(src='js/jquery-2.1.3.min.js')
+    script(src='bootstrap/js/bootstrap.min.js')
+    script(src='js/jquery.mb.YTPlayer.min.js')
+    script(src='js/appear.js')
+    script(src='js/jquery.simple-text-rotator.min.js')
+    script(src='js/jqBootstrapValidation.js')
+      <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+      <script src="js/gmaps.js"></script>
+    script(src='js/isotope.pkgd.min.js')
+    script(src='js/imagesloaded.pkgd.js')
+    script(src='js/jquery.flexslider-min.js')
+    script(src='js/jquery.magnific-popup.min.js')
+    script(src='js/jquery.fitvids.js')
+    script(src='js/smoothscroll.js')
+    script(src='js/wow.min.js')
+    script(src='js/owl.carousel.min.js')
+    script(src='js/contact.js')
+    script(src='js/custom.js')
+    script(src='js/our_custom.js')
+    script(src='js/skrollr.min.js')

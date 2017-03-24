@@ -858,6 +858,24 @@ Sections
 	margin-top: -35px;
 }
 
+/* Portrait */
+.portrait-head {
+  text-transform: none;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #111;
+}
+
+.portrait-sub {
+  text-transform: none;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 50px;
+  color: #111;
+}
+
 /* Restaurant module header */
 
 .alt-module-subtitle {
@@ -2146,6 +2164,7 @@ Vertival margin, padding
 .pt-30  {padding-top:30px!important}
 .pt-40  {padding-top:40px!important}
 .pt-50  {padding-top:50px!important}
+.pt-70  {padding-top:70px!important}
 .pt-140 {padding-top:140px!important}
 
 .pb-0   {padding-bottom:0!important}
