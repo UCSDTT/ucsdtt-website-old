@@ -30,6 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // middleware that calls ./routes/index.js whenever we hit the '/' endpoint
 app.use('/', routes);
 
+//TODO: Fix this for member list
+
 // catch 404 and forward to error handler
 //app.use(function(req, res, next) {
 //    var err = new Error('Not Found');
