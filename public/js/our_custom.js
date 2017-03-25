@@ -7,9 +7,9 @@ $(document).ready(function(){
   });
   $(".rush-flyer").hover(
     function() {
-      $(this).find('img').attr("src", "images/thetatau_back.jpg");
+      $(this).find('img').attr("src", "https://c1.staticflickr.com/4/3666/33479417552_577db86e2e_k.jpg");
     },
     function() {
-      $(this).find('img').attr("src", "images/thetatau_front.jpg");
+      $(this).find('img').attr("src", "https://c1.staticflickr.com/4/3682/33506831321_76692f19fd_k.jpg");
     });
 });
