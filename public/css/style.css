@@ -858,7 +858,7 @@ Sections
 	margin-top: -35px;
 }
 
-/* Portrait */
+/* Memberpage */
 .portrait-head {
   text-transform: none;
   text-align: center;
@@ -873,6 +873,13 @@ Sections
   text-align: center;
   font-size: 15px;
   margin-bottom: 50px;
+  color: #111;
+}
+
+.class-title {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 25px;
   color: #111;
 }
 
@@ -1337,6 +1344,10 @@ Portfolio
 	margin: 0;
 }
 
+.works-grid-1 .work-item {
+  width: 100%;
+}
+
 .works-grid-3 .work-item {
 	width: 33.333333%;
 }
@@ -1347,6 +1358,10 @@ Portfolio
 
 .works-grid-5 .work-item {
 	width: 20%;
+}
+
+.works-grid-6 .work-item {
+  width: 16.666666%;
 }
 
 .work-item > a {
