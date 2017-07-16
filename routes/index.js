@@ -76,7 +76,7 @@ router.post('/contact', function(req, res){
   var mailOpts = {
     from: req.body.email,
     to: "ttsdwebmaster@gmail.com",
-    subject: "tt contact form - " + req.body.name,
+    subject: "TT Website Contact Form - " + req.body.name,
     text: req.body.message
   };
 
